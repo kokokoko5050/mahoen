@@ -5,6 +5,7 @@
   margin: 0;
   font-size: 16px;
   font-family: 'メイリオ', Meiryo,'Meiryo UI';
+  box-sizing: border-box;
 }
 
 a{
@@ -23,34 +24,61 @@ td {
   font-size: 12px;
 }
 
-/* body{
-  background: url('sword.png');
-} */
+/* 隠しCSS */
 
-/* 全体へのマスク */
-.mask {
-  /* background: rgba(0, 0, 0, 0.4); */
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 2;
+.hiddenNav{
+  display: none;
 }
 
 .hidden{
   transform: translate(0, -700px);
 }
 
+
+/* プレイヤー選択ボタン */
+#player1Select{
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  padding: 16px 16px 0;
+  background: skyblue;
+}
+
+#player1Select select{
+  width: 200px; 
+  padding: 8px; 
+  font-size: 16px;
+  color: #444; 
+  background-color: #f9f9f9; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+
+/* ナビ出力アイコン */
+#explainIcon{
+  font-size: 32px;
+  cursor: pointer;
+}
+
+#explainIcon:hover{
+  opacity: 0.5;
+}
+
 /* 右のボタン一覧 */
+
 nav{
   display: flex;
   flex-direction: column;
   z-index: 1; 
-  gap: 16px;
+  gap: 8px;
   position: fixed;
-  top: 16px;
+  top: 64px;
   right: 16px;
+  padding: 8px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 4px #333;
 }
 
 .navButton {
@@ -58,10 +86,14 @@ nav{
   padding: 8px 0;
   border-radius: 8px;
   cursor: pointer;
-  width: 120px;
+  width: 100px;
   text-align: center;
+  font-size: 13px;
   font-weight: bold;
 }
+
+
+/* 説明画面 */
 
 #Howto {
   background: #92ffa4;
@@ -433,22 +465,16 @@ nav{
   margin: 16px auto 0;
 }
 
-/* プレイヤー選択 */
-#player1Select{
-  display: flex;
-  gap: 16px;
-  background: skyblue;
-}
 
-#player1Select select{
-  width: 200px; 
-  padding: 8px; 
-  font-size: 16px;
-  color: #444; 
-  background-color: #f9f9f9; 
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  cursor: pointer; 
+
+/* 全体コンテナ */
+.container-1p{
+  border: 1px solid #333;
+  background: #eee;
+  margin-left: 16px;
+  width: 684px;
+  padding: 16px 0;
+  border-radius: 16px;
 }
 
 /* プレイヤー１ケシゴム、装備コンテナ */
@@ -456,10 +482,8 @@ nav{
   display: flex;
   flex-direction: row-reverse;
   gap: 16px;
-  /* background: pink; */
   width: 600px;
   border-radius: 8px;
-  padding: 8px 16px;
 }
 
 #assist-1p{
@@ -663,11 +687,11 @@ nav{
   border-radius: 4px;
 }
 
-.container-1p{
-  border: 1px solid #333;
-  background: #eee;
-  margin-left: 140px;
-  width: 700px;
-  padding: 16px 0;
-  border-radius: 16px;
+@media (max-width: 700px) {
+
+  .container-1p{
+    margin: 0 16px;
+    width: calc(100% - 16px);
+  }
+
 }
