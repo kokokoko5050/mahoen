@@ -32,7 +32,7 @@ td {
 }
 
 .hidden {
-  transform: translate(0, -700px);
+  transform: translate(0, -1500px);
 }
 
 
@@ -41,8 +41,8 @@ td {
   display: flex;
   gap: 16px;
   justify-content: space-between;
-  padding: 16px 16px 0;
-  background: skyblue;
+  padding: 8px 16px 0;
+  /* background: skyblue; */
 }
 
 #player1Select select {
@@ -73,8 +73,8 @@ nav {
   flex-direction: column;
   z-index: 1;
   gap: 8px;
-  position: fixed;
-  top: 64px;
+  position: absolute;
+  top: 46px;
   right: 16px;
   padding: 8px;
   background: white;
@@ -163,11 +163,6 @@ nav {
   background: #0b00a5;
 }
 
-#Riset {
-  background: #ddd;
-  color: #333;
-}
-
 #Riset:hover {
   color: white;
   font-weight: bold;
@@ -187,13 +182,13 @@ nav {
 
 /* まほエンの遊びかた */
 .mahoenHowto {
-  position: fixed;
+  position: absolute;
   top: 40px;
   left: 0;
   right: 0;
   margin: 0 auto;
   text-align: center;
-  width: 500px;
+  width:400px;
   background: #fff;
   margin: 0 auto;
   border-radius: 8px;
@@ -204,39 +199,33 @@ nav {
   transition: transform 0.4s;
 }
 
+/* 閉じるボタン */
+#HowtoHidden {
+  font-weight: bold;
+  float: right;
+}
+
 .mahoenHowto h2 {
   font-size: 24px;
 }
 
-.mahoenHowto p+p {
-  margin-top: 16px;
+.mahoenHowto p {
+  font-size: 12px;
 }
 
-/* メニューボタンは統一でスタイル付 */
-.menuHidden {
-  all: unset;
-  margin-top: 16px;
-  padding: 16px 40px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  cursor: pointer;
+.mahoenHowto p+p{
+  margin-top: 8px;
 }
-
-.menuHidden:hover {
-  color: white;
-  background: #333;
-}
-
 
 /* そうび紹介のページ */
 .equipContainer {
   background: #fff;
-  position: fixed;
-  top: 40px;
+  position: absolute;
+  top: 16px;
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 800px;
+  width: 660px;
   margin: 0 auto;
   border-radius: 8px;
   padding: 16px;
@@ -247,8 +236,13 @@ nav {
   box-shadow: 0 0 8px black;
 }
 
+#equipHidden{
+  font-weight: bold;
+  float: right;
+}
+
 .equipContainer h2 {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .equipContainer img {
@@ -263,23 +257,25 @@ nav {
 }
 
 .equipExp div {
-  width: 250px;
-  margin-top: 16px;
+  margin-top: 8px;
 }
 
 .equipExp p {
-  margin-top: 16px;
-  font-size: 14px;
+  margin-top: 8px;
+  font-size: 12px;
+  /* background: yellow; */
   height: 60px;
+  width: 180px;
+  margin: 0 auto;
 }
 
 .equipExp h4 {
-  font-size: 18px;
-  margin-top: 16px;
+  font-size: 16px;
+  margin-top: 8px;
 }
 
 .equipExp table {
-  width: 200px;
+  width: 180px;
   margin: 0 auto;
 }
 
@@ -327,7 +323,7 @@ nav {
 
 .curseContainer section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .curseContainer h4 {
@@ -438,12 +434,12 @@ nav {
 
 .wizardExpContainer {
   background: #fff;
-  position: fixed;
-  top: 40px;
+  position: absolute;
+  top: 16px;
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 600px;
+  width: 660px;
   border-radius: 8px;
   padding: 16px;
   z-index: 3;
@@ -453,9 +449,15 @@ nav {
   box-shadow: 0 0 8px black;
 }
 
+/* 閉じるボタン */
+#wizardHidden{
+  font-weight: bold;
+  float: right;
+}
+
 .wizardExpContainer select {
   width: 200px;
-  padding: 8px;
+  padding: 4px 8px;
   font-size: 16px;
   color: #444;
   background-color: #f9f9f9;
@@ -464,15 +466,26 @@ nav {
   cursor: pointer;
 }
 
-.wizardExpContainer h4,
-.wizardExpContainer img {
-  margin-top: 16px;
+.wizardExpTop{
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.wizardExpContainer h4{
+  margin-top: 8px;
 }
 
 .wizardExpContainer p {
+  /* background: yellow; */
+  font-size: 12px;
   height: 72px;
-  width: 350px;
-  margin: 16px auto 0;
+  width: 200px;
+}
+
+.wizardExpBottom{
+  display: flex;
+  justify-content: center;
 }
 
 .wizardExpContainer tr:nth-child(odd) {
@@ -490,12 +503,13 @@ nav {
 
 .wizardExpContainer td {
   padding: 2px 0;
-  font-size: 13px;
+  font-size: 12px;
   width: 300px;
+  height: 25px;
 }
 
 .wizardExpContainer table {
-  margin: 16px auto 0;
+  margin: 8px auto 0;
 }
 
 
@@ -513,7 +527,7 @@ nav {
 
 /* プレイヤー１ケシゴム、装備コンテナ */
 #player1EE {
-  background: pink;
+  /* background: pink; */
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
@@ -525,7 +539,7 @@ nav {
 #Player1HpContainer {
   width: 100%;
   margin-top: 8px;
-  background: yellow;
+  /* background: yellow; */
 }
 
 #HP-1p {
@@ -726,7 +740,7 @@ nav {
 }
 
 /* ここからスマホ用スタイル！ */
-@media (max-width: 700px) {
+@media (max-width: 660px) {
 
   /* コンテナ幅 */
   .container-1p {
@@ -744,6 +758,38 @@ nav {
   #Player1Mahoen .mahoen-1p-8,
   #Player1Mahoen .mahoen-1p-9 {
     padding: 0;
+  }
+
+  /* 魔法使い一覧のページ調整 */
+  .wizardExpContainer{
+    width: calc(100% - 16px);
+  }
+
+  .wizardExpTop{
+    display: block;
+  }
+
+  #wizardFeature{
+    /* background: yellow; */
+    margin: 0 auto;
+  }
+
+  .wizardExpBottom{
+    display: block;
+  }
+
+  /* 遊びかたページの調整 */
+  .mahoenHowto{
+    width: calc(100% - 16px);
+  }
+
+  /* 装備紹介のページ調整 */
+  .equipContainer {
+    width: calc(100% - 16px);
+  }
+
+  .equipExp {
+    display: block;
   }
 
   /* ケシゴム紹介の調整 */

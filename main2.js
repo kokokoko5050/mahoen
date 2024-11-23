@@ -889,9 +889,5 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
   updateHP('#plus20-1p', - 20);
   updateHP('#plus30-1p', - 30);
 
-  // リセットボタンでページを再読み込み
-  document.querySelector('#Riset').addEventListener('click', () => {
-    location.reload();
-  });
 
 }

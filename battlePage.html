@@ -31,9 +31,6 @@
       <button class="navButton" id="eraserList">ケシゴム一覧</button>
     </div>
     <div>
-      <button class="navButton" id="Riset">もう一回！</button>
-    </div>
-    <div>
       <button class="navButton" id="topReturn"><a href="index.html">トップに戻る</a></button>
     </div>
   </nav>
@@ -42,27 +39,24 @@
   <main>
     <!-- まほエンの遊びかた -->
     <section class="mahoenHowto hidden">
-      <div>
-        <img src="mahoen-1.PNG" width="400px">
-      </div>
-      <div>
-        <h2>まほエンの遊びかた</h2>
-        <p>攻撃しあって、相手のHPを0にした人の勝ちだよ！<br>北の魔法使いや、北の出身は★<br>その他の魔法使いは●マークの属性だよ！<br>攻撃パターンは以下の３つだよ！</p>
-        <p>
-          ①「●に～のダメージ」→●マークがダメージをうける<br>➁「★に～のダメージ」→★マークがダメージをうける<br>③「全員に～のダメージ」→●と★両方がダメージをうける
-        </p>
-        <button class="menuHidden" id="HowtoHidden">閉じる</button>
-      </div>
+      <i class="bi bi-x-lg" id="HowtoHidden"></i>
+      <img src="mahoen-1.PNG" width="200px">
+      <h2>まほエンの遊びかた</h2>
+      <p>攻撃しあって、相手のHPを0にした人の勝ちだよ！<br>北の魔法使いや、北の出身は★マーク<br>その他の魔法使いは●マークだよ！<br>攻撃パターンは以下の３つだよ！</p>
+      <p>
+        ①「●に～のダメージ」→●マークがダメージをうける<br>➁「★に～のダメージ」→★マークがダメージをうける<br>③「全員に～のダメージ」→●と★両方がダメージをうける
+      </p>
     </section>
 
     <!-- そうび紹介のページ -->
     <section class="equipContainer hidden">
+      <i class="bi bi-x-lg" id="equipHidden"></i>
       <h2>そうびキャップの紹介</h2>
       <section class="equipExp">
         <div>
-          <img src="sword.png" width="150px">
+          <img src="sword.png" width="120px">
           <h4>きしだんの剣</h4>
-          <p>大きなダメージを与えられるぞ！<br>魔法と一緒に使って大ダメージ！</p>
+          <p>大きなダメージを与えられるぞ！<br>魔法と一緒に使って<br>大ダメージ！</p>
           <table>
             <thead>
               <tr>
@@ -92,9 +86,9 @@
           </table>
         </div>
         <div>
-          <img src="sickle.png" width="150px">
+          <img src="sickle.png" width="120px">
           <h4>おおがま</h4>
-          <p>全員にダメージを与える確率が高い。かくじつに相手のHPをへらせるぞ！</p>
+          <p>全員にダメージを<br>与える確率が高い。確実に<br>相手のHPをへらせるぞ！</p>
           <table>
             <thead>
               <tr>
@@ -124,9 +118,9 @@
           </table>
         </div>
         <div>
-          <img src="mace.png" width="150px">
+          <img src="mace.png" width="120px">
           <h4>メイス</h4>
-          <p>低確率で大ダメージをねらえるぞ！<br>岩盤を掘ることもできる。</p>
+          <p>低確率で大ダメージを<br>ねらえるぞ！<br>岩盤を掘ることもできる。</p>
           <table>
             <thead>
               <tr>
@@ -156,7 +150,6 @@
           </table>
         </div>
       </section>
-      <button class="menuHidden" id="equipHidden">閉じる</button>
     </section>
 
     <!-- のろい紹介のページ -->
@@ -289,74 +282,102 @@
 
     <!-- まほエン一覧 -->
     <section class="wizardExpContainer hidden">
-      <label>
-        みたいキャラを選んでね！<br>
-        <select id="wizardExp">
-          <option>ミスラ ★</option>
-          <option>オズ ★</option>
-          <option>フィガロ ★</option>
-          <option>ファウスト ●</option>
-          <option>シノとヒース ●</option>
-          <option>アーサー ★</option>
-          <option>ネロ ★</option>
-          <option>ブラッドリー ★</option>
-          <option>レノックス ●</option>
-          <option>フィガロ ★（調整版）</option>
-          <option>リケとミチル ●</option>
-          <option>ムル ●</option>
-          <option>シャイロック ●</option>
-          <option>カイン ●</option>
-          <option>オーエン ★</option>
-          <option>スノウとホワイト ★</option>
-        </select>
-      </label>
-      <section>
+      <i class="bi bi-x-lg" id="wizardHidden"></i>
+      <section class="wizardExpTop">
         <div id="Select">
-          <img src="misura.png" id="wizardIcon" width="125px">
+          <div>
+            <img src="misura.png" id="wizardIcon" width="150px">
+          </div>
+        </div>
+        <div>
+            <select id="wizardExp">
+              <option>ミスラ ★</option>
+              <option>オズ ★</option>
+              <option>フィガロ ★</option>
+              <option>ファウスト ●</option>
+              <option>シノとヒース ●</option>
+              <option>アーサー ★</option>
+              <option>ネロ ★</option>
+              <option>ブラッドリー ★</option>
+              <option>レノックス ●</option>
+              <option>フィガロ ★（調整版）</option>
+              <option>リケとミチル ●</option>
+              <option>ムル ●</option>
+              <option>シャイロック ●</option>
+              <option>カイン ●</option>
+              <option>オーエン ★</option>
+              <option>スノウとホワイト ★</option>
+            </select>
           <h4>とくちょう</h4>
           <p id="wizardFeature">きまぐれでミスが多いが、あたれば大ダメージ！いきなりかみつかれないように注意！</p>
         </div>
-        <div id="wizardCommand">
+      </section>
+      <section class="wizardExpBottom">
+        <div>
           <table>
             <thead>
               <tr>
-                <th colspan="2">こうげきコマンド</th>
+                <th>こうげきコマンド</th>
               </tr>
               <tr>
                 <th id="CBefore">へんしん前</th>
-                <th id="CAfter">へんしん後</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td id="CT0">《ｱﾙｼﾑ》 全員に40のダメージ</td>
-                <td id="CB0">まきつき攻撃 全員に70ダメージ</td>
               </tr>
               <tr>
                 <td id="CT1">ねむい</td>
-                <td id="CB1">うでがもげた！ 次の１回の攻撃力 -30</td>
               </tr>
               <tr>
                 <td id="CT2">《ｱﾙｼﾑ》 ｸﾗｰｹﾝにへんしん</td>
-                <td id="CB2">まきつき攻撃 全員に70ダメージ</td>
               </tr>
               <tr>
                 <td id="CT3">《ｱﾙｼﾑ》 相手を凍らせた もう一回振る</td>
-                <td id="CB3">まきつき攻撃 全員に30ダメージ</td>
               </tr>
               <tr>
                 <td id="CT4">《ｱﾙｼﾑ》 クラーケンにへんしん！</td>
-                <td id="CB4">うでがもげた！ 次の１回の攻撃力 -30</td>
               </tr>
               <tr>
                 <td id="CT5">あはは！</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>こうげきコマンド</th>
+              </tr>
+              <tr>
+                <th id="CAfter">へんしん後</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="CB0">まきつき攻撃 全員に70ダメージ</td>
+              </tr>
+              <tr>
+                <td id="CB1">うでがもげた！ 次の１回の攻撃力 -30</td>
+              </tr>
+              <tr>
+                <td id="CB2">まきつき攻撃 全員に70ダメージ</td>
+              </tr>
+              <tr>
+                <td id="CB3">まきつき攻撃 全員に30ダメージ</td>
+              </tr>
+              <tr>
+                <td id="CB4">うでがもげた！ 次の１回の攻撃力 -30</td>
+              </tr>
+              <tr>
                 <td id="CB5">まきつき攻撃 全員に30ダメージ</td>
               </tr>
             </tbody>
           </table>
         </div>
       </section>
-      <button class="menuHidden" id="wizardHidden">閉じる</button>
     </section>
 
 
