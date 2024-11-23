@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+  <!-- 右のボタン要素 -->
+  <nav>
+    <div>
+      <button class="navButton" id="Howto">遊びかた</button>
+    </div>
+    <div>
+      <button class="navButton" id="HowtoMovie">説明動画</button>
+    </div>
+    <div>
+      <button class="navButton" id="wizardList">まほエン一覧</button>
+    </div>
+    <div>
+      <button class="navButton" id="equipList">そうび一覧</button>
+    </div>
+    <div>
+      <button class="navButton" id="curseList">のろい一覧</button>
+    </div>
+    <div>
+      <button class="navButton" id="eraserList">ケシゴム一覧</button>
+    </div>
+    <div>
+      <button class="navButton" id="Riset">もう一回！</button>
+    </div>
+    <div>
+      <button class="navButton" id="topReturn"><a href="index.html">トップに戻る</a></button>
+    </div>
+  </nav>
+
+
+  <main>
+    <!-- まほエンの遊びかた -->
+    <section class="mahoenHowto hidden">
+      <div>
+        <img src="mahoen-1.PNG" width="400px">
+      </div>
+      <div>
+        <h2>まほエンの遊びかた</h2>
+        <p>攻撃しあって、相手のHPを0にした人の勝ちだよ！<br>北の魔法使いや、北の出身は★<br>その他の魔法使いは●マークの属性だよ！<br>攻撃パターンは以下の３つだよ！</p>
+        <p>
+          ①「●に～のダメージ」→●マークがダメージをうける<br>➁「★に～のダメージ」→★マークがダメージをうける<br>③「全員に～のダメージ」→●と★両方がダメージをうける
+        </p>
+        <button class="menuHidden" id="HowtoHidden">閉じる</button>
+      </div>
+    </section>
+
+    <!-- そうび紹介のページ -->
+    <section class="equipContainer hidden">
+      <h2>そうびキャップの紹介</h2>
+      <section class="equipExp">
+        <div>
+          <img src="sword.png" width="150px">
+          <h4>きしだんの剣</h4>
+          <p>大きなダメージを与えられるぞ！<br>魔法と一緒に使って大ダメージ！</p>
+          <table>
+            <thead>
+              <tr>
+                <th>こうげきコマンド</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>★に30のダメージ</td>
+              </tr>
+              <tr>
+                <td>●に30のダメージ</td>
+              </tr>
+              <tr>
+                <td>ミス</td>
+              </tr>
+              <tr>
+                <td>★に30のダメージ</td>
+              </tr>
+              <tr>
+                <td>●に30のダメージ</td>
+              </tr>
+              <tr>
+                <td>ミス</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <img src="sickle.png" width="150px">
+          <h4>おおがま</h4>
+          <p>全員にダメージを与える確率が高い。かくじつに相手のHPをへらせるぞ！</p>
+          <table>
+            <thead>
+              <tr>
+                <th>こうげきコマンド</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ミス</td>
+              </tr>
+              <tr>
+                <td>全員に20ダメージ</td>
+              </tr>
+              <tr>
+                <td>全員に10ダメージ</td>
+              </tr>
+              <tr>
+                <td>ミス</td>
+              </tr>
+              <tr>
+                <td>全員に20ダメージ</td>
+              </tr>
+              <tr>
+                <td>全員に10ダメージ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <img src="mace.png" width="150px">
+          <h4>メイス</h4>
+          <p>低確率で大ダメージをねらえるぞ！<br>岩盤を掘ることもできる。</p>
+          <table>
+            <thead>
+              <tr>
+                <th>こうげきコマンド</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>●に60ダメージ</td>
+              </tr>
+              <tr>
+                <td>ミス</td>
+              </tr>
+              <tr>
+                <td>★に60ダメージ</td>
+              </tr>
+              <tr>
+                <td>ミス</td>
+              </tr>
+              <tr>
+                <td>ミス</td>
+              </tr>
+              <tr>
+                <td>ミス</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <button class="menuHidden" id="equipHidden">閉じる</button>
+    </section>
+
+    <!-- のろい紹介のページ -->
+    <section class="curseContainer hidden">
+      <img src="curse.png" width="150px">
+      <h4>のろいキャップ</h4>
+      <p>相手が攻撃するたびにダメージをあたえるぞ。<br>これには呪い屋もニンマリ。</p>
+      <table>
+        <thead>
+          <tr>
+            <th>こうげきコマンド</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>のろい 20のダメージをうけた</td>
+          </tr>
+          <tr>
+            <td>のろい 20のダメージをうけた</td>
+          </tr>
+          <tr>
+            <td>じょうか キャップをはずす</td>
+          </tr>
+          <tr>
+            <td>のろい 20のダメージをうけた</td>
+          </tr>
+          <tr>
+            <td>のろい 20のダメージをうけた</td>
+          </tr>
+          <tr>
+            <td>じょうか キャップをはずす</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="menuHidden" id="curseHidden">閉じる</button>
+    </section>
+
+    <!-- 交流消しゴム紹介のページ -->
+    <section class="eraserContainer hidden">
+      <h2>交流消しゴムの紹介</h2>
+      <p>「交流ケシゴム」は、まほうエンピツの代わりに<br>一度だけ使うことのできるピンチヒッターだ！</p>
+      <section class="eraserExp">
+        <div>
+          <img src="rutile.png" width="150px">
+          <h4>ルチル</h4>
+          <p>回復や、強力な2回行動が可能だぞ！<br>追いついてごらんなさい！</p>
+          <table>
+            <thead>
+              <tr>
+                <th>こうげきコマンド</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>箒に乗った！ 酔ってしまった</td>
+              </tr>
+              <tr>
+                <td>《ｵﾙﾄﾆｸ･ｾﾄﾏｵｰｼﾞｪ》 HP30かいふく</td>
+              </tr>
+              <tr>
+                <td>箒に乗った！ 次のターン２回ふる</td>
+              </tr>
+              <tr>
+                <td>《ｵﾙﾄﾆｸ･ｾﾄﾏｵｰｼﾞｪ》 HP30かいふく</td>
+              </tr>
+              <tr>
+                <td>箒に乗った！ 酔ってしまった</td>
+              </tr>
+              <tr>
+                <td>ミスラさんのお守り 次の１回ダメージをうけない</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <img src="chloeRustica.png" width="150px">
+          <h4>クロエとラスティカ</h4>
+          <p>相手を高確率で１回休みにでき、<br>強力な攻撃を防ぐことができるぞ！<br>なんか休んじゃうんだよなぁ。</p>
+          <table>
+            <thead>
+              <tr>
+                <th>こうげきコマンド</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>《ｱﾓﾚｽﾄ･ｳﾞｨｪｯｾ》 鳥籠にしまった 相手は１回休み</td>
+              </tr>
+              <tr>
+                <td>《ｽｲｽﾋﾟｼｰﾎﾞ･ｳﾞｫｲﾃｨﾝｺﾞｰｸ》 かし状態に 相手は１回休み</td>
+              </tr>
+              <tr>
+                <td>「失礼。少々お待ちを」 相手は１回休み</td>
+              </tr>
+              <tr>
+                <td>「採寸させて！」 相手は１回休み</td>
+              </tr>
+              <tr>
+                <td>祈り HP30かいふく</td>
+              </tr>
+              <tr>
+                <td>うたっておどった！</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <button class="menuHidden" id="eraserHidden">閉じる</button>
+    </section>
+
+    <!-- まほエン一覧 -->
+    <section class="wizardExpContainer hidden">
+      <label>
+        みたいキャラを選んでね！<br>
+        <select id="wizardExp">
+          <option>ミスラ ★</option>
+          <option>オズ ★</option>
+          <option>フィガロ ★</option>
+          <option>ファウスト ●</option>
+          <option>シノとヒース ●</option>
+          <option>アーサー ★</option>
+          <option>ネロ ★</option>
+          <option>ブラッドリー ★</option>
+          <option>レノックス ●</option>
+          <option>フィガロ ★（調整版）</option>
+          <option>リケとミチル ●</option>
+          <option>ムル ●</option>
+          <option>シャイロック ●</option>
+          <option>カイン ●</option>
+          <option>オーエン ★</option>
+          <option>スノウとホワイト ★</option>
+        </select>
+      </label>
+      <section>
+        <div id="Select">
+          <img src="misura.png" id="wizardIcon" width="125px">
+          <h4>とくちょう</h4>
+          <p id="wizardFeature">きまぐれでミスが多いが、あたれば大ダメージ！いきなりかみつかれないように注意！</p>
+        </div>
+        <div id="wizardCommand">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">こうげきコマンド</th>
+              </tr>
+              <tr>
+                <th id="CBefore">へんしん前</th>
+                <th id="CAfter">へんしん後</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="CT0">《ｱﾙｼﾑ》 全員に40のダメージ</td>
+                <td id="CB0">まきつき攻撃 全員に70ダメージ</td>
+              </tr>
+              <tr>
+                <td id="CT1">ねむい</td>
+                <td id="CB1">うでがもげた！ 次の１回の攻撃力 -30</td>
+              </tr>
+              <tr>
+                <td id="CT2">《ｱﾙｼﾑ》 ｸﾗｰｹﾝにへんしん</td>
+                <td id="CB2">まきつき攻撃 全員に70ダメージ</td>
+              </tr>
+              <tr>
+                <td id="CT3">《ｱﾙｼﾑ》 相手を凍らせた もう一回振る</td>
+                <td id="CB3">まきつき攻撃 全員に30ダメージ</td>
+              </tr>
+              <tr>
+                <td id="CT4">《ｱﾙｼﾑ》 クラーケンにへんしん！</td>
+                <td id="CB4">うでがもげた！ 次の１回の攻撃力 -30</td>
+              </tr>
+              <tr>
+                <td id="CT5">あはは！</td>
+                <td id="CB5">まきつき攻撃 全員に30ダメージ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <button class="menuHidden" id="wizardHidden">閉じる</button>
+    </section>
+
+
+    <!-- プレイヤー１まほエン -->
+    <section id="player1Select">
+      <div>
+        <!-- キャラ選択 -->
+        <label>
+          <select id="wizardSelect-1p">
+            <option>-魔法使いを選んでね-</option>
+            <option>ミスラ ★</option>
+            <option>オズ ★</option>
+            <option>フィガロ ★</option>
+            <option>ファウスト ●</option>
+            <option>シノとヒース ●</option>
+            <option>アーサー ★</option>
+            <option>ネロ ★</option>
+            <option>ブラッドリー ★</option>
+            <option>レノックス ●</option>
+            <option>フィガロ ★（調整版）</option>
+            <option>リケとミチル ●</option>
+            <option>ムル ●</option>
+            <option>シャイロック ●</option>
+            <option>カイン ●</option>
+            <option>オーエン ★</option>
+            <option>スノウとホワイト ★</option>
+          </select>
+        </label>
+      </div>
+      <div>
+        <label>
+          <select id="assistSelect-1p">
+            <option>-ケシゴムを選んでね-</option>
+            <option>ルチル</option>
+            <option>クロエとラスティカ</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <!-- まほエンのテーブル -->
+    <section id="Player1Mahoen">
+      <table>
+        <tbody>
+          <tr class="row-1">
+            <td class="mahoen-1p-1" style="background:#ccc;"></td>
+            <td class="mahoen-1p-2"></td>
+            <td class="mahoen-1p-3"></td>
+            <td class="mahoen-1p-4"></td>
+            <td class="mahoen-1p-5"></td>
+            <td class="mahoen-1p-6"></td>
+            <td class="mahoen-1p-7"></td>
+            <td class="mahoen-1p-8"></td>
+            <td class="mahoen-1p-9" style="background:#ccc;"></td>
+          </tr>
+          <tr class="row-2">
+            <td class="mahoen-1p-1" id="clmid-1p-1" style="background:#ccc;"></td>
+            <td class="mahoen-1p-2" id="clmid-1p-2"><img src="Player1.png" id="clmid-1p-img" width="80px" height="56px">
+            </td>
+            <td class="mahoen-1p-3" id="clmid-1p-3"></td>
+            <td class="mahoen-1p-4" id="clmid-1p-4"></td>
+            <td class="mahoen-1p-5" id="clmid-1p-5"></td>
+            <td class="mahoen-1p-6" id="commandTop-1p"></td>
+            <td class="mahoen-1p-7" id="clmid-1p-7"></td>
+            <td class="mahoen-1p-8" id="commandButtom-1p"></td>
+            <td class="mahoen-1p-9" id="clmid-1p-9" style="background:#ccc;"></td>
+          </tr>
+          <tr class="row-3">
+            <td class="mahoen-1p-1" style="background:#ccc;"></td>
+            <td class="mahoen-1p-2"></td>
+            <td class="mahoen-1p-3"></td>
+            <td class="mahoen-1p-4"></td>
+            <td class="mahoen-1p-5"></td>
+            <td class="mahoen-1p-6"></td>
+            <td class="mahoen-1p-7"></td>
+            <td class="mahoen-1p-8"></td>
+            <td class="mahoen-1p-9" style="background:#ccc;"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <p id="losevoice-1p"></p>
+
+    <div class="container-1p">
+
+      <section id="player1EE">
+        <!-- プレイヤー１交流消しゴム   -->
+        <div id="player1Eraser">
+          <table>
+            <tbody>
+              <tr class="eraser-1p-row1">
+                <td class="eraser-1p-1"></td>
+                <td class="eraser-1p-2"></td>
+              </tr>
+              <tr class="eraser-1p-row2">
+                <td class="eraser-1p-1" id="assist-1p-Command"></td>
+                <td class="eraser-1p-2"><img src="Player1.png" width="60px" height="60px" id="assist-1p-Icon"></td>
+              </tr>
+              <tr class="eraser-1p-row3">
+                <td class="eraser-1p-1"></td>
+                <td class="eraser-1p-2"></td>
+              </tr>
+            </tbody>
+          </table>
+          <button id="assist-1p">消しゴムをふる✋<br>（１回まで）</button>
+        </div>
+
+        <!-- 装備ボタン 呪いボタン -->
+        <div>
+          <select id="equipSelect-1p">
+            <option>-そうびを選ぶ！-</option>
+            <option>おおがま</option>
+            <option>きしだんの剣</option>
+            <option>メイス</option>
+          </select>
+          <div>
+            <button id="equip-1p">装備する！</button>
+          </div>
+          <div>
+            <button id="curse-1p">呪われた！</button>
+          </div>
+        </div>
+
+        <!-- エンピツを振るボタン -->
+        <div>
+          <button id="attack-1p">鉛筆をふる✋</button>
+        </div>
+      </section>
+
+      <!-- プレイヤー１得点表 -->
+      <section id="Player1HpContainer">
+        <label>HP: <input type="text" value="100" id="HP-1p"></label>
+        <button class="minus-1p" id="minus50-1p">-50</button>
+        <button class="minus-1p" id="minus40-1p">-40</button>
+        <button class="minus-1p" id="minus30-1p">-30</button>
+        <button class="minus-1p" id="minus20-1p">-20</button>
+        <button class="minus-1p" id="minus10-1p">-10</button>
+        <button class="plus-1p" id="plus10-1p">+10</button>
+        <button class="plus-1p" id="plus20-1p">+20</button>
+        <button class="plus-1p" id="plus30-1p">+30</button>
+      </section>
+
+    </div>
+
+  </main>
+
+  <script src="main2.js"></script>
+</body>
+
+</html>

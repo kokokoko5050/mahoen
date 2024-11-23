@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+/* 共通 */
+* {
+  margin: 0;
+  font-size: 16px;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/* ヘッダー */
+header {
+  padding: 8px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1{
+  font-size: 32px;
+}
+
+/* まほエンとは… */
+.mahoenExp {
+  background: rgb(182, 255, 140);
+  display: flex;
+  text-align: center;
+  gap: 32px;
+  justify-content: center;
+}
+
+.mahoenExp div{
+  height: 500px;
+  align-content: center;
+}
+
+.mahoenExpImg {
+  width: 400px;
+  background-image: url('hero.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.mahoenExp h2 {
+  font-size: 24px;
+  /* margin-top: 32px; */
+}
+
+.mahoenExp p {
+  margin-top: 16px;
+  line-height: 2;
+}
+
+.mahoenExp button{
+  all: unset;
+  margin-top: 32px;
+}
+
+.mahoenExp a {
+  all: unset;
+  font-size: 32px;
+  padding: 16px 32px;
+  background: green;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.mahoenExp a:hover {
+  opacity: 0.7;
+}
+
+/* 魔法使いの約束って？ */
+.mahoyakuExp {
+  width: 800px;
+  margin: 32px auto 0;
+  padding: 16px;
+  text-align: center;
+  border-radius: 8px;
+  background: rgb(215, 244, 255);
+  border: 4px ridge blue;
+}
+
+.mahoyakuExp h2 {
+  font-size: 24px;
+}
+
+.mahoyakuExp p {
+  margin: 16px 0;
+}
+
+.mahoyakuExp a {
+  all: unset;
+  background: rgb(185, 216, 255);
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.mahoyakuExp a:hover {
+  background: blue;
+  color: white;
+}
+
+footer{
+  background: #222;
+}
+
+footer div{
+  max-width: 800px;
+  margin: 32px auto 0;
+  padding: 16px;
+  color: white;
+}

@@ -1,0 +1,673 @@
+@charset "utf-8";
+
+/* 共通 */
+* {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'メイリオ', Meiryo,'Meiryo UI';
+}
+
+a{
+  all: unset;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+table {
+  border-collapse: collapse;
+}
+td {
+  border: 1px solid #333;
+  font-size: 12px;
+}
+
+/* body{
+  background: url('sword.png');
+} */
+
+/* 全体へのマスク */
+.mask {
+  /* background: rgba(0, 0, 0, 0.4); */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.hidden{
+  transform: translate(0, -700px);
+}
+
+/* 右のボタン一覧 */
+nav{
+  display: flex;
+  flex-direction: column;
+  z-index: 1; 
+  gap: 16px;
+  position: fixed;
+  top: 16px;
+  right: 16px;
+}
+
+.navButton {
+  all: unset;
+  padding: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 120px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#Howto {
+  background: #92ffa4;
+  color: #375a3d;
+}
+#Howto:hover {
+  color: white;
+  font-weight: bold;
+  background: #375a3d;
+}
+
+#HowtoMovie{
+  background: #92ffa4;
+  color: #375a3d;
+}
+#HowtoMovie:hover {
+  color: white;
+  font-weight: bold;
+  background: #375a3d;
+}
+
+#wizardList{
+  background: #ff9292;
+  color: #7a1200;
+}
+#wizardList:hover {
+  color: white;
+  font-weight: bold;
+  background: #7a1200;
+}
+
+#equipList {
+  background: #ffbf92;
+  color: #a55e00;
+}
+#equipList:hover {
+  color: white;
+  font-weight: bold;
+  background: #a55e00;
+}
+
+#curseList {
+  background: #ffa4df;
+  color: #a5007e;
+  font-weight: bold;
+}
+#curseList:hover {
+  color: white;
+  font-weight: bold;
+  background: #a5007e;
+}
+
+#eraserList {
+  background: #92a6ff;
+  color: #0b00a5;
+}
+#eraserList:hover {
+  color: white;
+  font-weight: bold;
+  background: #0b00a5;
+}
+
+#Riset{
+  background: #ddd;
+  color: #333; 
+}
+
+#Riset:hover {
+  color: white;
+  font-weight: bold;
+  background: #333;
+}
+
+#topReturn{
+  background: #ddd;
+  color: #333; 
+}
+
+#topReturn:hover {
+  color: white;
+  font-weight: bold;
+  background: #333;
+}
+
+/* まほエンの遊びかた */
+.mahoenHowto {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 500px;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 4px solid greenyellow;
+  box-shadow: 0 0 8px black;
+  padding: 16px;
+  z-index: 3;
+  transition: transform 0.4s;
+}
+
+.mahoenHowto h2 {
+  font-size: 24px;
+}
+
+.mahoenHowto p+p {
+  margin-top: 16px;
+}
+
+/* メニューボタンは統一でスタイル付 */
+.menuHidden{
+  all: unset;
+  margin-top: 16px;
+  padding: 16px 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.menuHidden:hover{
+  color: white;
+  background: #333;
+}
+
+
+/* そうび紹介のページ */
+.equipContainer{
+  background: #fff;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 16px;
+  z-index: 3;
+  transition: transform 0.4s;
+  text-align: center;
+  border: 4px solid rgb(255, 179, 47);
+  box-shadow: 0 0 8px black;
+}
+
+.equipContainer h2 {
+  font-size: 24px;
+}
+
+.equipContainer img {
+  display: block;
+  margin: 0 auto;
+}
+
+.equipExp {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.equipExp div {
+  width: 250px;
+  margin-top: 16px;
+}
+
+.equipExp p {
+  margin-top: 16px;
+  font-size: 14px;
+  height: 60px;
+}
+
+.equipExp h4{
+  font-size:18px ;
+  margin-top: 16px;
+}
+
+.equipExp table {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.equipExp tr:nth-child(odd){
+  background: pink;
+}
+
+.equipExp th{
+  border: 1px solid #111;
+  padding: 2px 0;
+  font-size: 12px;
+  color: white;
+  background: rgb(255, 97, 123);
+}
+
+.equipExp td{
+  padding: 2px 0;
+  font-size: 12px;
+}
+
+/* 呪い紹介のページ */
+.curseContainer{
+  background: #fff;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 400px;
+  border-radius: 8px;
+  padding: 16px;
+  z-index: 3;
+  transition: transform 0.4s;
+  text-align: center;
+  border: 4px solid rgb(255, 47, 189);
+  box-shadow: 0 0 8px black;
+}
+
+.curseContainer h4{
+  margin-top: 16px;
+}
+
+.curseContainer p{
+  margin-top: 16px;
+}
+
+.curseContainer tr:nth-child(odd){
+  background: pink;
+}
+
+.curseContainer th{
+  border: 1px solid #111;
+  padding: 2px 0;
+  font-size: 12px;
+  color: white;
+  background: rgb(255, 97, 123);
+}
+
+.curseContainer td{
+  padding: 2px 0;
+  font-size: 12px;
+}
+
+.curseContainer table{
+  width: 200px;
+  margin: 16px auto 0;
+}
+
+/* ケシゴムのページ */
+.eraserContainer{
+  background: #fff;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 600px;
+  border-radius: 8px;
+  padding: 16px;
+  z-index: 3;
+  transition: transform 0.4s;
+  text-align: center;
+  border: 4px solid rgb(47, 64, 255);
+  box-shadow: 0 0 8px black;
+}
+
+.eraserContainer h2{
+  font-size: 24px;
+}
+
+.eraserExp{
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.eraserExp h4{
+  margin-top: 16px;
+}
+
+.eraserExp p{
+  margin-top: 16px;
+  height: 72px;
+}
+
+.eraserExp tr:nth-child(odd){
+  background: rgb(192, 255, 193);
+}
+
+.eraserExp th{
+  border: 1px solid #111;
+  padding: 2px 0;
+  font-size: 12px;
+  color: white;
+  background: rgb(55, 212, 152);
+}
+
+.eraserExp td{
+  padding: 2px 0;
+  font-size: 10px;
+}
+
+.eraserExp table{
+  width: 270px;
+  margin: 16px auto 0;
+}
+
+/* 魔法使い一覧のページ */
+
+.wizardExpContainer{
+  background: #fff;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 600px;
+  border-radius: 8px;
+  padding: 16px;
+  z-index: 3;
+  transition: transform 0.4s;
+  text-align: center;
+  border: 4px solid rgb(255, 47, 47);
+  box-shadow: 0 0 8px black;
+}
+
+.wizardExpContainer select{
+  width: 200px; 
+  padding: 8px; 
+  font-size: 16px;
+  color: #444; 
+  background-color: #f9f9f9; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+
+.wizardExpContainer h4,
+.wizardExpContainer img{
+  margin-top: 16px;
+}
+
+.wizardExpContainer p{
+  height: 72px;
+  width: 350px;
+  margin: 16px auto 0;
+}
+
+.wizardExpContainer tr:nth-child(odd){
+  background: rgb(253, 255, 192);
+}
+
+.wizardExpContainer th{
+  border: 1px solid #111;
+  padding: 2px 0;
+  font-size: 12px;
+  color: white;
+  background: rgb(55, 152, 212);
+  width: 300px;
+}
+
+.wizardExpContainer td{
+  padding: 2px 0;
+  font-size: 13px;
+  width: 300px;
+}
+
+.wizardExpContainer table{
+  margin: 16px auto 0;
+}
+
+/* プレイヤー選択 */
+#player1Select{
+  display: flex;
+  gap: 16px;
+  background: skyblue;
+}
+
+#player1Select select{
+  width: 200px; 
+  padding: 8px; 
+  font-size: 16px;
+  color: #444; 
+  background-color: #f9f9f9; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+
+/* プレイヤー１ケシゴム、装備コンテナ */
+#player1EE{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 16px;
+  /* background: pink; */
+  width: 600px;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+#assist-1p{
+  all: unset;
+  padding: 4px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 120px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  background: #bdffab;
+  border: 1px solid #333;
+  box-shadow: 0 4px 0 0 ;
+  margin-top: 8px;
+}
+
+#assist-1p:active {
+  box-shadow: 0 1px #333;
+  transform: translateY(3px);
+}
+
+
+#attack-1p{
+  all: unset;
+  margin: 32px 32px 0 0;
+  padding: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 120px;
+  text-align: center;
+  font-weight: bold;
+  background: #fff;
+  border: 1px solid #333;
+  box-shadow: 0 4px 0 0 ;
+}
+
+#attack-1p:active {
+  box-shadow: 0 1px #333;
+  transform: translateY(3px);
+}
+
+#equip-1p{
+  all: unset;
+  font-size: 14px;
+  padding: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+  font-weight: bold;
+  background: #77a2ff;
+  color: #003d9e;
+  margin-top: 8px;
+}
+#equip-1p:hover {
+  color: white;
+  font-weight: bold;
+  background: #003d9e;
+}
+
+#equipSelect-1p{
+  width: 150px; 
+  padding: 8px; 
+  font-size: 16px;
+  color: #444; 
+  background-color: #f9f9f9; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  cursor: pointer;
+}
+
+#curse-1p{
+  all: unset;
+  font-size: 14px;
+  padding: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+  font-weight: bold;
+  background: #ffacf9;
+  color: #a5007e;
+  margin-top: 8px;
+}
+#curse-1p:hover {
+  color: white;
+  font-weight: bold;
+  background: #a5007e;
+}
+
+
+/* まほエン１ｐスタイル */
+#Player1Mahoen {
+  padding: 32px 0 8px 16px;
+}
+
+#Player1Mahoen .row-1,
+#Player1Mahoen .row-3 {
+  height: 10px;
+  background: #eee;
+  filter: brightness(0.9);
+}
+
+#Player1Mahoen .row-2 {
+  height: 56px;
+  background: white;
+}
+
+#Player1Mahoen .mahoen-1p-1,
+#Player1Mahoen .mahoen-1p-9 {
+  width: 140px;
+  padding: 0 4px;
+}
+
+#Player1Mahoen .mahoen-1p-2 {
+  width: 80px;
+}
+
+#Player1Mahoen .mahoen-1p-3 {
+  width: 16px;
+  background: #333;
+  color: white;
+  text-align: center;
+}
+
+#Player1Mahoen .mahoen-1p-4 {
+  width: 10px;
+}
+
+#Player1Mahoen .mahoen-1p-5,
+#Player1Mahoen .mahoen-1p-7 {
+  width: 28px;
+  background: #333;
+  color: white;
+  font-size: 10px;
+  padding: 0 4px;
+  text-align: center;
+}
+
+#Player1Mahoen .mahoen-1p-6,
+#Player1Mahoen .mahoen-1p-8 {
+  width: 160px;
+  padding: 0 4px;
+}
+
+/* 敗北ボイス */
+#losevoice-1p {
+  font-weight: bold;
+  color: red;
+  font-size: 16px;
+  padding-left: 150px;
+  height: 32px;
+}
+
+/* 交流ケシゴム */
+
+#player1Eraser .eraser-1p-row1,
+#player1Eraser .eraser-1p-row3
+{
+  height: 10px;
+  background: #eee;
+  filter: brightness(0.9);
+}
+
+#player1Eraser .eraser-1p-1{
+  width: 140px;
+  padding: 0 4px;
+}
+
+#player1Eraser .eraser-1p-row2{
+  height: 60px;
+  background: white;
+}
+
+#player1Eraser .eraser-1p-2{
+  width: 60px;
+}
+
+/* プレイヤー１得点表 */
+#Player1HpContainer{
+  padding-left: 64px;
+  width: 600px;
+  /* background: yellow; */
+}
+#HP-1p{
+  font-size: 24px;
+  width: 80px;
+  text-align: center;
+}
+
+.minus-1p{
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.plus-1p{
+  cursor: pointer;
+  color: white;
+  background: #333;
+  border-radius: 4px;
+}
+
+.container-1p{
+  border: 1px solid #333;
+  background: #eee;
+  margin-left: 140px;
+  width: 700px;
+  padding: 16px 0;
+  border-radius: 16px;
+}
