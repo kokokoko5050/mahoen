@@ -471,23 +471,50 @@ nav{
 .container-1p{
   border: 1px solid #333;
   background: #eee;
-  margin-left: 16px;
-  width: 684px;
-  padding: 16px 0;
+  margin-left: 72px;
+  max-width: 600px;
+  width: 100%;
+  padding: 16px;
   border-radius: 16px;
 }
 
 /* プレイヤー１ケシゴム、装備コンテナ */
 #player1EE{
+  background: pink;
   display: flex;
-  flex-direction: row-reverse;
+  flex-wrap: wrap;
   gap: 16px;
-  width: 600px;
+  width: 100%;
   border-radius: 8px;
+}
+
+/* プレイヤー１得点表 */
+#Player1HpContainer{
+  width: 100%;
+  margin-top: 8px;
+  background: yellow;
+}
+#HP-1p{
+  font-size: 24px;
+  width: 80px;
+  text-align: center;
+}
+
+.minus-1p{
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.plus-1p{
+  cursor: pointer;
+  color: white;
+  background: #333;
+  border-radius: 4px;
 }
 
 #assist-1p{
   all: unset;
+  display: block;
   padding: 4px 0;
   border-radius: 8px;
   cursor: pointer;
@@ -498,14 +525,14 @@ nav{
   background: #bdffab;
   border: 1px solid #333;
   box-shadow: 0 4px 0 0 ;
-  margin-top: 8px;
+  margin: 8px auto 0px;
+
 }
 
 #assist-1p:active {
   box-shadow: 0 1px #333;
   transform: translateY(3px);
 }
-
 
 #attack-1p{
   all: unset;
@@ -578,7 +605,7 @@ nav{
 
 /* まほエン１ｐスタイル */
 #Player1Mahoen {
-  padding: 32px 0 8px 16px;
+  padding: 32px 16px 8px 16px;
 }
 
 #Player1Mahoen .row-1,
@@ -663,35 +690,31 @@ nav{
   width: 60px;
 }
 
-/* プレイヤー１得点表 */
-#Player1HpContainer{
-  padding-left: 64px;
-  width: 600px;
-  /* background: yellow; */
-}
-#HP-1p{
-  font-size: 24px;
-  width: 80px;
-  text-align: center;
-}
-
-.minus-1p{
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.plus-1p{
-  cursor: pointer;
-  color: white;
-  background: #333;
-  border-radius: 4px;
-}
 
 @media (max-width: 700px) {
 
+  /* コンテナ幅 */
   .container-1p{
     margin: 0 16px;
     width: calc(100% - 16px);
+  }
+
+  /* まほエンの幅 */
+  #Player1Mahoen .row-2 {
+    height: 100px;
+  }
+  
+#Player1Mahoen .mahoen-1p-1,
+#Player1Mahoen .mahoen-1p-6,
+#Player1Mahoen .mahoen-1p-8,
+#Player1Mahoen .mahoen-1p-9{
+    padding: 0;
+  }
+
+  /* 振るボタン、装備、ケシゴムの配置 */
+  #player1EE{
+    flex-direction: column;
+    align-items: center;
   }
 
 }
