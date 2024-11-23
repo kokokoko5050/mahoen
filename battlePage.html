@@ -161,9 +161,17 @@
 
     <!-- のろい紹介のページ -->
     <section class="curseContainer hidden">
-      <img src="curse.png" width="150px">
-      <h4>のろいキャップ</h4>
-      <p>相手が攻撃するたびにダメージをあたえるぞ。<br>これには呪い屋もニンマリ。</p>
+      <i class="bi bi-x-lg" id="curseHidden"></i>
+      <section>
+        <div>
+          <img src="curse.png" width="150px">
+        </div>
+        <div>
+          <h4>のろいキャップ</h4>
+          <p>相手が攻撃するたびに<br>ダメージをあたえるぞ。<br>これには呪い屋もニンマリ。</p>
+        </div>
+      </section>
+
       <table>
         <thead>
           <tr>
@@ -191,18 +199,24 @@
           </tr>
         </tbody>
       </table>
-      <button class="menuHidden" id="curseHidden">閉じる</button>
     </section>
 
     <!-- 交流消しゴム紹介のページ -->
     <section class="eraserContainer hidden">
+      <i class="bi bi-x-lg" id="eraserHidden"></i>
       <h2>交流消しゴムの紹介</h2>
       <p>「交流ケシゴム」は、まほうエンピツの代わりに<br>一度だけ使うことのできるピンチヒッターだ！</p>
       <section class="eraserExp">
-        <div>
-          <img src="rutile.png" width="150px">
-          <h4>ルチル</h4>
-          <p>回復や、強力な2回行動が可能だぞ！<br>追いついてごらんなさい！</p>
+        <section id="rutileCountainer">
+          <div id="rutileExp">
+            <div>
+              <img src="rutile.png" width="120px">
+            </div>
+            <div>
+              <h4>ルチル</h4>
+              <p>回復や、強力な2回行動が可能だぞ！追いついてごらんなさい！</p>
+            </div>
+          </div>
           <table>
             <thead>
               <tr>
@@ -230,11 +244,17 @@
               </tr>
             </tbody>
           </table>
-        </div>
-        <div>
-          <img src="chloeRustica.png" width="150px">
-          <h4>クロエとラスティカ</h4>
-          <p>相手を高確率で１回休みにでき、<br>強力な攻撃を防ぐことができるぞ！<br>なんか休んじゃうんだよなぁ。</p>
+        </section>
+        <section id="chloeRusticaCountainer">
+          <div id="chloeRusticaExp">
+            <div>
+              <img src="chloeRustica.png" width="120px">
+            </div>
+            <div>
+              <h4>クロエとラスティカ</h4>
+              <p>相手を高確率で１回休みにでき、強力な攻撃を防ぐことができるぞ！なんか休んじゃうんだよなぁ。</p>
+            </div>
+          </div>
           <table>
             <thead>
               <tr>
@@ -262,9 +282,9 @@
               </tr>
             </tbody>
           </table>
-        </div>
+
+        </section>
       </section>
-      <button class="menuHidden" id="eraserHidden">閉じる</button>
     </section>
 
     <!-- まほエン一覧 -->
