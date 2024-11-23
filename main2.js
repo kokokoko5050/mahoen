@@ -2,53 +2,48 @@
 
 {
 
+// ナビの出し入れ
+document.querySelector('#explainIcon').addEventListener('click', () => {
+  document.querySelector('nav').classList.toggle('hiddenNav')
+});
+
   // 遊びかたの出し入れ
   document.querySelector('#Howto').addEventListener('click', () => {
-    document.querySelector('body').classList.toggle('mask')
     document.querySelector('.mahoenHowto').classList.toggle('hidden')
   });
   document.querySelector('#HowtoHidden').addEventListener('click', () => {
-    document.querySelector('body').classList.toggle('mask')
     document.querySelector('.mahoenHowto').classList.toggle('hidden')
   });
 
   // 魔法使い一覧の出し入れ
   document.querySelector('#wizardList').addEventListener('click', () => {
-    document.querySelector('body').classList.toggle('mask')
     document.querySelector('.wizardExpContainer').classList.toggle('hidden')
   });
   document.querySelector('#wizardHidden').addEventListener('click', () => {
-    document.querySelector('body').classList.toggle('mask')
     document.querySelector('.wizardExpContainer').classList.toggle('hidden')
   });
 
   // そうび一覧の出し入れ
   document.querySelector('#equipList').addEventListener('click', () => {
-    document.querySelector('body').classList.toggle('mask')
     document.querySelector('.equipContainer').classList.toggle('hidden')
   });
   document.querySelector('#equipHidden').addEventListener('click', () => {
-    document.querySelector('body').classList.toggle('mask')
     document.querySelector('.equipContainer').classList.toggle('hidden')
   });
 
   // のろい一覧の出し入れ
   document.querySelector('#curseList').addEventListener('click', () => {
-    document.querySelector('body').classList.toggle('mask')
     document.querySelector('.curseContainer').classList.toggle('hidden')
   });
   document.querySelector('#curseHidden').addEventListener('click', () => {
-    document.querySelector('body').classList.toggle('mask')
     document.querySelector('.curseContainer').classList.toggle('hidden')
   });
 
   // ケシゴムの紹介の出し入れ
   document.querySelector('#eraserList').addEventListener('click', () => {
-    document.querySelector('body').classList.toggle('mask')
     document.querySelector('.eraserContainer').classList.toggle('hidden')
   });
   document.querySelector('#eraserHidden').addEventListener('click', () => {
-    document.querySelector('body').classList.toggle('mask')
     document.querySelector('.eraserContainer').classList.toggle('hidden')
   });
 
