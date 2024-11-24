@@ -227,7 +227,7 @@ nav {
   width: 660px;
   margin: 0 auto;
   border-radius: 8px;
-  padding: 16px;
+  padding: 8px;
   z-index: 3;
   transition: transform 0.4s;
   text-align: center;
@@ -241,7 +241,7 @@ nav {
 }
 
 .equipContainer h2 {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .equipContainer img {
@@ -269,7 +269,7 @@ nav {
 }
 
 .equipExp h4 {
-  font-size: 16px;
+  font-size: 13px;
   margin-top: 8px;
 }
 
@@ -291,16 +291,16 @@ nav {
 }
 
 .equipExp td {
-  padding: 2px 0;
+  padding: 1px 0;
   font-size: 12px;
-  height: 25px;
+  height: 22px;
 }
 
 /* 呪い紹介のページ */
 .curseContainer {
   background: #fff;
   position: absolute;
-  top: 40px;
+  top: 16px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -323,6 +323,7 @@ nav {
 
 .curseContainer h4 {
   margin-top: 8px;
+  font-size: 13px;
 }
 
 .curseContainer p {
@@ -345,25 +346,25 @@ nav {
 .curseContainer td {
   padding: 2px 0;
   font-size: 12px;
-  height: 25px;
+  height: 22px;
 }
 
 .curseContainer table {
   width: 200px;
-  margin: 16px auto 0;
+  margin: 8px auto 0;
 }
 
 /* ケシゴムのページ */
 .eraserContainer {
   background: #fff;
   position: absolute;
-  top: 24px;
+  top: 16px;
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 700px;
+  width: 650px;
   border-radius: 8px;
-  padding: 16px;
+  padding: 8px;
   z-index: 3;
   transition: transform 0.4s;
   text-align: center;
@@ -377,12 +378,10 @@ nav {
   float: right;
 }
 
-.eraserContainer h2 {
-  font-size: 16px;
-}
-
+.eraserContainer h2,
+.eraserContainer h4,
 .eraserContainer p {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .eraserExp {
@@ -399,7 +398,7 @@ nav {
 }
 
 .eraserExp p {
-  margin-top: 8px;
+  margin-top: 4px;
   height: 72px;
   width: 146px;
   font-size: 12px;
@@ -420,12 +419,12 @@ nav {
 .eraserExp td {
   padding: 2px 0;
   font-size: 10px;
-  height: 25px;
+  height: 22px;
 }
 
 .eraserExp table {
   width: 270px;
-  margin: 16px auto 0;
+  margin: 8px auto 0;
 }
 
 /* 魔法使い一覧のページ */
@@ -471,13 +470,12 @@ nav {
 }
 
 .wizardExpContainer h4 {
-  margin-top: 8px;
+  margin-top: 4px;
+  font-size: 13px;
 }
 
 .wizardExpContainer p {
-  /* background: yellow; */
   font-size: 12px;
-  height: 72px;
   width: 200px;
 }
 
@@ -497,14 +495,14 @@ nav {
   color: white;
   background: rgb(55, 152, 212);
   width: 300px;
-  height: 25px;
+  height: 22px;
 }
 
 .wizardExpContainer td {
   padding: 2px 0;
   font-size: 12px;
   width: 300px;
-  height: 25px;
+  height: 22px;
 }
 
 .wizardExpContainer table {
@@ -517,8 +515,8 @@ nav {
 .container-1p {
   border: 1px dotted #333;
   background: #eee;
-  margin-left: 36px;
-  max-width: 746px;
+  margin-left: 16px;
+  max-width: 750px;
   width: 100%;
   padding: 8px;
   border-radius: 16px;
@@ -689,7 +687,7 @@ nav {
 }
 
 #Player1Mahoen .mahoen-1p-2 {
-  width: 80px;
+  width: 63px;
 }
 
 #Player1Mahoen .mahoen-1p-3 {
@@ -705,7 +703,7 @@ nav {
 
 #Player1Mahoen .mahoen-1p-5,
 #Player1Mahoen .mahoen-1p-7 {
-  width: 28px;
+  width: 30px;
   background: #333;
   color: white;
   font-size: 10px;
