@@ -107,11 +107,6 @@ nav {
   background: #375a3d;
 }
 
-#HowtoMovie {
-  background: #92ffa4;
-  color: #375a3d;
-}
-
 #HowtoMovie:hover {
   color: white;
   font-weight: bold;
@@ -188,7 +183,7 @@ nav {
   right: 0;
   margin: 0 auto;
   text-align: center;
-  width:400px;
+  width: 400px;
   background: #fff;
   margin: 0 auto;
   border-radius: 8px;
@@ -213,8 +208,12 @@ nav {
   font-size: 12px;
 }
 
-.mahoenHowto p+p{
+.mahoenHowto p+p {
   margin-top: 8px;
+}
+
+.video-container{
+  margin-top: 16px;
 }
 
 /* そうび紹介のページ */
@@ -236,7 +235,7 @@ nav {
   box-shadow: 0 0 8px black;
 }
 
-#equipHidden{
+#equipHidden {
   font-weight: bold;
   float: right;
 }
@@ -294,6 +293,7 @@ nav {
 .equipExp td {
   padding: 2px 0;
   font-size: 12px;
+  height: 25px;
 }
 
 /* 呪い紹介のページ */
@@ -321,17 +321,13 @@ nav {
   float: right;
 }
 
-.curseContainer section {
-  display: flex;
-  justify-content: center;
-}
-
 .curseContainer h4 {
-  margin-top: 16px;
+  margin-top: 8px;
 }
 
 .curseContainer p {
-  margin-top: 12px;
+  margin-top: 8px;
+  font-size: 12px;
 }
 
 .curseContainer tr:nth-child(odd) {
@@ -349,6 +345,7 @@ nav {
 .curseContainer td {
   padding: 2px 0;
   font-size: 12px;
+  height: 25px;
 }
 
 .curseContainer table {
@@ -423,6 +420,7 @@ nav {
 .eraserExp td {
   padding: 2px 0;
   font-size: 10px;
+  height: 25px;
 }
 
 .eraserExp table {
@@ -450,7 +448,7 @@ nav {
 }
 
 /* 閉じるボタン */
-#wizardHidden{
+#wizardHidden {
   font-weight: bold;
   float: right;
 }
@@ -466,13 +464,13 @@ nav {
   cursor: pointer;
 }
 
-.wizardExpTop{
+.wizardExpTop {
   display: flex;
   justify-content: center;
   gap: 8px;
 }
 
-.wizardExpContainer h4{
+.wizardExpContainer h4 {
   margin-top: 8px;
 }
 
@@ -483,7 +481,7 @@ nav {
   width: 200px;
 }
 
-.wizardExpBottom{
+.wizardExpBottom {
   display: flex;
   justify-content: center;
 }
@@ -499,6 +497,7 @@ nav {
   color: white;
   background: rgb(55, 152, 212);
   width: 300px;
+  height: 25px;
 }
 
 .wizardExpContainer td {
@@ -519,7 +518,7 @@ nav {
   border: 1px dotted #333;
   background: #eee;
   margin-left: 36px;
-  max-width: 700px;
+  max-width: 746px;
   width: 100%;
   padding: 8px;
   border-radius: 16px;
@@ -551,6 +550,9 @@ nav {
 .minus-1p {
   cursor: pointer;
   border-radius: 4px;
+  background: #fff;
+  color: #333;
+  border: 1px solid #333;
 }
 
 .plus-1p {
@@ -560,10 +562,11 @@ nav {
   border-radius: 4px;
 }
 
-#reset{
+#reset {
   margin-left: 16px;
   cursor: pointer;
   color: #333;
+  border: 1px solid #333;
   background: #ffffff;
   border-radius: 4px;
 }
@@ -663,7 +666,8 @@ nav {
 
 /* まほエン１ｐスタイル */
 #Player1Mahoen {
-  padding: 24px 16px 8px 16px;
+  padding: 24px 0 8px 16px;
+  /* background: pink; */
 }
 
 #Player1Mahoen .row-1,
@@ -769,25 +773,25 @@ nav {
   }
 
   /* 魔法使い一覧のページ調整 */
-  .wizardExpContainer{
+  .wizardExpContainer {
     width: calc(100% - 16px);
   }
 
-  .wizardExpTop{
+  .wizardExpTop {
     display: block;
   }
 
-  #wizardFeature{
+  #wizardFeature {
     /* background: yellow; */
     margin: 0 auto;
   }
 
-  .wizardExpBottom{
+  .wizardExpBottom {
     display: block;
   }
 
   /* 遊びかたページの調整 */
-  .mahoenHowto{
+  .mahoenHowto {
     width: calc(100% - 16px);
   }
 
