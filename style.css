@@ -31,7 +31,7 @@ h1{
 }
 
 .mahoenExp div{
-  height: 500px;
+  height: 600px;
   align-content: center;
 }
 
@@ -53,22 +53,18 @@ h1{
   line-height: 2;
 }
 
-.mahoenExp button{
+#battleStart {
   all: unset;
   margin-top: 32px;
-}
-
-.mahoenExp a {
-  all: unset;
-  font-size: 32px;
-  padding: 16px 32px;
+  font-size: 24px;
+  padding: 8px 16px;
   background: green;
   color: white;
   border-radius: 8px;
   cursor: pointer;
 }
 
-.mahoenExp a:hover {
+#battleStart:hover {
   opacity: 0.7;
 }
 
@@ -118,7 +114,75 @@ footer div{
   color: white;
 }
 
-@media (max-width: 700px) {
+/* 推奨デバイス */
+
+/* まほエンの遊びかた */
+
+.hidden {
+  transform: translate(0, -1500px);
+}
+
+.mahoenHowto {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: calc(100% - 80px);
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px black;
+  padding: 16px;
+  z-index: 3;
+  transition: transform 0.4s;
+}
+
+/* 閉じるボタン */
+#HowtoHidden {
+  font-weight: bold;
+  float: right;
+}
+
+.mahoenHowto h2 {
+  font-size: 18px;
+}
+
+.mahoenHowto p {
+  font-size: 12px;
+  /* margin-top: 8px; */
+}
+.mahoenHowto div{
+  padding-bottom: 8px;
+}
+
+.mahoenHowto div+div{
+  border-top: 1px dotted #333;
+  padding-top: 16px;
+}
+
+.mahoenHowto button{
+  all: unset;
+}
+
+.mahoenHowto a {
+  all: unset;
+  display: block;
+  margin-top: 8px;
+  font-size: 16px;
+  padding: 4px 8px;
+  background: green;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.mahoenHowto a:hover {
+  opacity: 0.7;
+}
+
+
+@media (max-width: 640px) {
   
 /* まほエンって？ */
   .mahoenExp {

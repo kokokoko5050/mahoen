@@ -889,5 +889,12 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
   updateHP('#plus20-1p', - 20);
   updateHP('#plus30-1p', - 30);
 
+  // リセットボタン
+  document.querySelector('#reset').addEventListener('click', () => {
+    const userConfirmed = confirm('リセットしますか？');
+     if (userConfirmed) {
+      location.reload();
+    } 
+  });
 
 }

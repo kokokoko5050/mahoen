@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>まほエン対戦環境 ベータ版</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,29 +16,31 @@
 
   </header>
 
-    <!-- まほエンとは…！ -->
-    <section class="mahoenExp">
+  <!-- まほエンとは…！ -->
+  <section class="mahoenExp">
 
-      <div>
-        <h2>まほエンとは…!</h2>
-        <p>
-          「まほうエンピツ」略して「まほエン」<br>南の国で同じ学校に通うことになった<br>リケとミチル!（イベスト）<br>二人に学校を楽しんでもらうため、<br>賢者とフィガロが作った<br>まほうエンピツ！（二次創作）<br>21人の魔法使いが織り成す、<br>かつてない激闘を目撃せよ！
-        </p>
-        <p style="color: red; font-weight: bold; font-size: 18px;">
-          休み時間を燃やし尽くせ！
-        </p>
-        <button><a href="battlePage.html">勝負する！</a></button>
-      </div>
-      <div class="mahoenExpImg">
-      </div>
-    </section>
+    <div>
+      <h2>まほエンとは…!</h2>
+      <p>
+        「まほうエンピツ」略して「まほエン」<br>南の国で同じ学校に通うことになった<br>リケとミチル!（イベスト）<br>二人に学校を楽しんでもらうため、<br>賢者とフィガロが作った<br>まほうエンピツ！（二次創作）<br>21人の魔法使いが織り成す、<br>かつてない激闘を目撃せよ！
+      </p>
+      <p style="color: red; font-weight: bold; font-size: 18px;">
+        休み時間を燃やし尽くせ！
+      </p>
+      <button id="battleStart">勝負する！</button>
+    </div>
+    <div class="mahoenExpImg">
+    </div>
+  </section>
 
-    <!-- 魔法使いの約束って？ -->
-    <section class="mahoyakuExp">
-      <h2>魔法使いの約束って…？</h2>
-      <p>「魔法使いの約束」は「魔法使いと心を繋ぐ育成ゲーム」だよ！令和６年11月26日に５周年を迎えたよ！メインシナリオライター都志見文太氏の描く、数百年の時を生きる魔法使い達が複雑で深い人間関係テクストテクストテクストテクストテクスト</p>
-      <a href="https://mahoyaku.com/" target="_blank">公式サイトへGO！</a>
-    </section>
+  <!-- 魔法使いの約束って？ -->
+  <section class="mahoyakuExp">
+    <h2>魔法使いの約束って…？</h2>
+    <p>
+      「魔法使いの約束」は「魔法使いと心を繋ぐ育成ゲーム」だよ！令和６年11月26日に５周年を迎えたよ！メインシナリオライター都志見文太氏の描く、数百年の時を生きる魔法使い達が複雑で深い人間関係テクストテクストテクストテクストテクスト
+    </p>
+    <a href="https://mahoyaku.com/" target="_blank">公式サイトへGO！</a>
+  </section>
 
   <footer>
     <div>
@@ -48,6 +51,25 @@
       <p>製作：こばや氏</p>
     </div>
   </footer>
+
+  <!-- 推奨デバイス -->
+  <section class="mahoenHowto hidden">
+    <i class="bi bi-x-lg" id="HowtoHidden"></i>
+    <h2>２つの遊びかたがあるよ！</h2>
+    <div>
+      <img src="mahoen-1.PNG" width="200px">
+      <div>
+        <img src="QR_417780.png" width="60px">
+      </div>
+      <p>QRからもう一台用意してね！<br>横画面での操作推奨だよ！</p>
+      <button><a href="battlePage.html">スマホ２台で遊ぶ！</a></button>
+    </div>
+    <div>
+      <img src="mahoen-1.PNG" width="200px">
+      <p>１台で対戦ができるよ！</p>
+      <button><a href="battlePage.html">タブレット１台で遊ぶ！</a></button>
+    </div>
+  </section>
 
   <script src="main.js"></script>
 </body>
