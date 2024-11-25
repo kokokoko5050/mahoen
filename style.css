@@ -81,13 +81,13 @@ h1{
 /* 魔法使いの約束って？ */
 .mahoyakuExp {
   box-sizing: border-box;
-  width: 600px;
+  width: 500px;
   margin: 16px auto 0;
   padding: 16px;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 32px;
   background: rgb(215, 244, 255);
-  border: 4px ridge blue;
+  border: 8px ridge rgb(140, 108, 255);
 }
 
 .mahoyakuExp h2 {
@@ -110,6 +110,11 @@ h1{
 .mahoyakuExp a:hover {
   background: blue;
   color: white;
+}
+
+span{
+  font-weight: bold;
+  color: blue;
 }
 
 footer{
