@@ -183,7 +183,7 @@ nav {
   right: 0;
   margin: 0 auto;
   text-align: center;
-  width: 400px;
+  width: 600px;
   background: #fff;
   margin: 0 auto;
   border-radius: 8px;
@@ -198,6 +198,13 @@ nav {
 #HowtoHidden {
   font-weight: bold;
   float: right;
+}
+
+.mahoenHowtoContainer{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  align-items: center;
 }
 
 .mahoenHowto h2 {
@@ -293,7 +300,7 @@ nav {
 .equipExp td {
   padding: 1px 0;
   font-size: 12px;
-  height: 22px;
+  height: 25px;
 }
 
 /* 呪い紹介のページ */
@@ -495,14 +502,14 @@ nav {
   color: white;
   background: rgb(55, 152, 212);
   width: 300px;
-  height: 22px;
+  height: 25px;
 }
 
 .wizardExpContainer td {
   padding: 2px 0;
   font-size: 12px;
   width: 300px;
-  height: 22px;
+  height: 25px;
 }
 
 .wizardExpContainer table {
@@ -755,7 +762,7 @@ nav {
   /* コンテナ幅 */
   .container-1p {
     margin: 0 16px;
-    width: calc(100% - 16px);
+    width: calc(100% - 32px);
   }
 
   /* まほエンの幅 */
@@ -772,7 +779,7 @@ nav {
 
   /* 魔法使い一覧のページ調整 */
   .wizardExpContainer {
-    width: calc(100% - 16px);
+    width: calc(100% - 32px);
   }
 
   .wizardExpTop {
@@ -790,12 +797,16 @@ nav {
 
   /* 遊びかたページの調整 */
   .mahoenHowto {
-    width: calc(100% - 16px);
+    width: calc(100% - 32px);
+  }
+
+  .mahoenHowtoContainer{
+    display: block;
   }
 
   /* 装備紹介のページ調整 */
   .equipContainer {
-    width: calc(100% - 16px);
+    width: calc(100% - 32px);
   }
 
   .equipExp {
@@ -804,7 +815,7 @@ nav {
 
   /* ケシゴム紹介の調整 */
   .eraserContainer {
-    width: calc(100% - 16px);
+    width: calc(100% - 32px);
   }
 
   .eraserExp {
@@ -823,7 +834,7 @@ nav {
 
   /* のろいページの調整 */
   .curseContainer {
-    width: calc(100% - 16px);
+    width: calc(100% - 32px);
   }
 
   .curseContainer section {

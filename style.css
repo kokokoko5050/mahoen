@@ -19,6 +19,8 @@ header {
 
 h1{
   font-size: 32px;
+  display: inline;
+  /* background: pink; */
 }
 
 /* まほエンとは… */
@@ -72,7 +74,7 @@ h1{
 
 .warning{
   padding: 16px;
-  max-width: calc(100%);
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -141,7 +143,7 @@ footer p{
 
 .mahoenHowto {
   position: fixed;
-  top: 40px;
+  top: 24px;
   left: 0;
   right: 0;
   margin: 0 auto;
