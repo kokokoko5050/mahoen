@@ -60,7 +60,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
     misuraCommandTop = [
       "《ｱﾙｼﾑ》 全員に40のダメージ",
       "ねむい",
-      "《ｱﾙｼﾑ》 ｸﾗｰｹﾝにへんしん",
+      "《ｱﾙｼﾑ》 クラーケンにへんしん！",
       "《ｱﾙｼﾑ》 相手を凍らせた もう一回振る",
       "《ｱﾙｼﾑ》 クラーケンにへんしん！",
       "あはは！"
@@ -68,7 +68,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
     misuraCommandButtom = [
       "まきつき攻撃 全員に70ダメージ",
       "うでがもげた！ 次の１回の攻撃力 -30",
-      "まきつき攻撃 全員に70ダメージ",
+      "まきつき攻撃 全員に50ダメージ",
       "まきつき攻撃 全員に30ダメージ",
       "うでがもげた！ 次の１回の攻撃力 -30",
       "まきつき攻撃 全員に30ダメージ"
@@ -102,7 +102,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
 
   const figaroLockedView = [
     'figaro.png',
-    '★',
+    '●',
     '',
     '',
     '謎のちょい悪オヤジ製作のまほエン。超強力なHP全回復がとくちょう。そういうところだぞ！',
@@ -315,7 +315,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
     riquetMitileCommandTop = [
       "《ｵﾙﾄﾆｸ･ｾｱﾙｼｽﾋﾟﾙﾁｪ》 HP30かいふく",
       "《ｻﾝﾚﾃｨｱ･ｴﾃﾞｨﾌ》 全員に20ダメージ",
-      "《ｵﾙﾄﾆｸ･ｾｱﾋﾟ… かんだ！",
+      "《ｵﾙﾄﾆｸ･ｾｱﾋﾟ… かんだ！ もう１回振る！",
       "回復薬をつかった HP20かいふく",
       "「許します」 あいてをゆるした",
       "《ｽｷﾝﾃｨｯﾗ》 全員に30ダメージ",
@@ -421,9 +421,9 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
       "やくさいのきず へ もう１回ふる",
     ],
     owenCommandButtom = [
-      "北の魔法使い に",
+      "北の魔法使い に ★に20ダメージ",
       "死んじゃえ 全員に60のダメージ",
-      "北の魔法使い に",
+      "北の魔法使い に ●に20ダメージ",
       "おうたをうたった",
       "北の魔法使い に",
       "……？",
@@ -759,12 +759,15 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
     switch (equipSelect) {
       case 'おおがま':
         EquipCommand1p = sickleEquipCommand;
+        document.querySelector('#equip-1p').disabled = false;
         break;
       case 'きしだんの剣':
         EquipCommand1p = swordEquipCommand;
+        document.querySelector('#equip-1p').disabled = false;
         break;
       case 'メイス':
         EquipCommand1p = maceEquipCommand;
+        document.querySelector('#equip-1p').disabled = false;
         break;
     }
   });

@@ -637,6 +637,13 @@ nav {
   background: #003d9e;
 }
 
+#equip-1p:disabled {
+   background: #d3d3d3;
+   color: #888888;
+   cursor: not-allowed;
+   font-weight: normal;
+  }
+
 #equipSelect-1p {
   width: 150px;
   padding: 8px;
