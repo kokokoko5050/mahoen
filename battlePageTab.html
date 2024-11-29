@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="icon" href="mahoenicon.png" sizes="16x16" type="image/png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="style3.css">
 </head>
@@ -37,16 +38,25 @@
     <!-- まほエンの遊びかた -->
     <section class="mahoenHowto hidden">
       <i class="bi bi-x-lg" id="HowtoHidden"></i>
-      <img src="mahoen-1.PNG" width="200px">
-      <h2>まほエンの遊びかた</h2>
-      <p>攻撃しあって、相手のHPを0にした人の勝ちだよ！<br>北の魔法使いや、北の出身は★マーク<br>その他の魔法使いは●マークだよ！<br>攻撃パターンは以下の３つだよ！</p>
-      <p>
-        ①「●に～のダメージ」→●マークがダメージをうける<br>➁「★に～のダメージ」→★マークがダメージをうける<br>③「全員に～のダメージ」→●★両方がダメージをうける
-      </p>
-      <div class="video-container">
-        <iframe width="280" height="157" src="https://www.youtube.com/embed/OsnbDWhZFAA?si=OEC3uvfFn3Xu4i6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <p>説明動画もあるよ！(未実装)</p>
+      <section class="mahoenHowtoContainer">
+        <div>
+          <img src="mahoen-1.PNG" width="200px">
+          <h2>まほエンの遊びかた</h2>
+          <p>攻撃しあって、相手のHPを0にした人の勝ちだよ！<br>北の魔法使いや、北の出身は★マーク<br>その他の魔法使いは●マークだよ！<br>攻撃パターンは以下の３つだよ！</p>
+          <p>
+            ①「●に～のダメージ」→●がダメージをうける<br>➁「★に～のダメージ」→★がダメージをうける<br>③「全員に～のダメージ」→●★がダメージをうける
+          </p>
+        </div>
+
+        <div class="video-container">
+          <iframe width="220" height="130" src="https://www.youtube.com/embed/OsnbDWhZFAA?si=OEC3uvfFn3Xu4i6k"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>説明動画もあるよ！(未実装)</p>
+        </div>
+
+      </section>
     </section>
 
     <!-- そうび紹介のページ -->
@@ -55,7 +65,7 @@
       <h2>そうびキャップの紹介</h2>
       <section class="equipExp">
         <div>
-          <img src="sword.png" width="100px">
+          <img src="sword.png" width="84px">
           <h4>きしだんの剣</h4>
           <p>大きなダメージを与えられるぞ！<br>魔法と一緒に使って<br>大ダメージ！</p>
           <table>
@@ -87,7 +97,7 @@
           </table>
         </div>
         <div>
-          <img src="sickle.png" width="100px">
+          <img src="sickle.png" width="84px">
           <h4>おおがま</h4>
           <p>全員にダメージを<br>与える確率が高い。確実に<br>相手のHPをへらせるぞ！</p>
           <table>
@@ -119,7 +129,7 @@
           </table>
         </div>
         <div>
-          <img src="mace.png" width="100px">
+          <img src="mace.png" width="84px">
           <h4>メイス</h4>
           <p>低確率で大ダメージを<br>ねらえるぞ！<br>岩盤を掘ることもできる。</p>
           <table>
@@ -158,7 +168,7 @@
       <i class="bi bi-x-lg" id="curseHidden"></i>
       <section>
         <div>
-          <img src="curse.png" width="100px">
+          <img src="curse.png" width="84px">
         </div>
         <div>
           <h4>のろいキャップ</h4>
@@ -204,7 +214,7 @@
         <section id="rutileCountainer">
           <div id="rutileExp">
             <div>
-              <img src="rutile.png" width="120px">
+              <img src="rutile.png" width="100px">
             </div>
             <div>
               <h4>ルチル</h4>
@@ -242,7 +252,7 @@
         <section id="chloeRusticaCountainer">
           <div id="chloeRusticaExp">
             <div>
-              <img src="chloeRustica.png" width="120px">
+              <img src="chloeRustica.png" width="100px">
             </div>
             <div>
               <h4>クロエとラスティカ</h4>
@@ -287,14 +297,14 @@
       <section class="wizardExpTop">
         <div id="Select">
           <div>
-            <img src="misura.png" id="wizardIcon" width="150px">
+            <img src="misura.png" id="wizardIcon" width="120px">
           </div>
         </div>
         <div>
           <select id="wizardExp">
             <option>ミスラ ★</option>
             <option>オズ ★</option>
-            <option>フィガロ ★</option>
+            <option>フィガロ ●</option>
             <option>ファウスト ●</option>
             <option>シノとヒース ●</option>
             <option>アーサー ★</option>
@@ -382,7 +392,7 @@
     </section>
 
 
-    <!-- キャラ選択・ケシゴム選択 ナビ画面 -->
+    <!-- キャラ選択・ケシゴム選択 ナビ画面１ｐ -->
     <section id="player1Select">
       <div>
         <!-- キャラ選択 -->
@@ -391,7 +401,7 @@
             <option>-魔法使いを選んでね-</option>
             <option>ミスラ ★</option>
             <option>オズ ★</option>
-            <option>フィガロ ★</option>
+            <option>フィガロ ●</option>
             <option>ファウスト ●</option>
             <option>シノとヒース ●</option>
             <option>アーサー ★</option>
@@ -420,7 +430,7 @@
       </div>
     </section>
 
-    <!-- まほエンのテーブル -->
+    <!-- まほエンのテーブル１ｐ -->
     <section id="Player1Mahoen">
       <table>
         <tbody>
@@ -437,7 +447,7 @@
           </tr>
           <tr class="row-2">
             <td class="mahoen-1p-1" id="clmid-1p-1" style="background:#ccc;"></td>
-            <td class="mahoen-1p-2" id="clmid-1p-2"><img src="Player1.png" id="clmid-1p-img" width="80px" height="56px">
+            <td class="mahoen-1p-2" id="clmid-1p-2"><img src="Player1.png" id="clmid-1p-img" width="63px" height="56px">
             </td>
             <td class="mahoen-1p-3" id="clmid-1p-3"></td>
             <td class="mahoen-1p-4" id="clmid-1p-4"></td>
@@ -481,7 +491,7 @@
             <option>メイス</option>
           </select>
           <div>
-            <button id="equip-1p">装備する！</button>
+            <button id="equip-1p" disabled>装備する！</button>
           </div>
           <div>
             <button id="curse-1p">呪われた！</button>
@@ -498,7 +508,7 @@
               </tr>
               <tr class="eraser-1p-row2">
                 <td class="eraser-1p-1" id="assist-1p-Command"></td>
-                <td class="eraser-1p-2"><img src="Player1.png" width="60px" height="60px" id="assist-1p-Icon"></td>
+                <td class="eraser-1p-2"><img src="Player1.png" width="67px" height="60px" id="assist-1p-Icon"></td>
               </tr>
               <tr class="eraser-1p-row3">
                 <td class="eraser-1p-1"></td>
@@ -521,10 +531,156 @@
         <button class="plus-1p" id="plus10-1p">+10</button>
         <button class="plus-1p" id="plus20-1p">+20</button>
         <button class="plus-1p" id="plus30-1p">+30</button>
-        <button id="reset">リセット</button>
+        <button id="reset-1p">リセット</button>
       </section>
 
     </div>
+
+
+    <!-- まほエンのテーブル２ｐ -->
+
+    <div class="container-2p">
+
+      <section id="player2EE">
+        <!-- エンピツを振るボタン -->
+        <div>
+          <button id="attack-2p">鉛筆をふる✋</button>
+        </div>
+
+        <!-- 装備ボタン 呪いボタン -->
+        <div>
+          <select id="equipSelect-2p">
+            <option>-そうびを選ぶ！-</option>
+            <option>おおがま</option>
+            <option>きしだんの剣</option>
+            <option>メイス</option>
+          </select>
+          <div>
+            <button id="equip-2p" disabled>装備する！</button>
+          </div>
+          <div>
+            <button id="curse-2p">呪われた！</button>
+          </div>
+        </div>
+
+        <!-- プレイヤー２交流消しゴム   -->
+        <div id="player2Eraser">
+          <table>
+            <tbody>
+              <tr class="eraser-2p-row1">
+                <td class="eraser-2p-1"></td>
+                <td class="eraser-2p-2"></td>
+              </tr>
+              <tr class="eraser-2p-row2">
+                <td class="eraser-2p-1" id="assist-2p-Command"></td>
+                <td class="eraser-2p-2"><img src="Player2.png" width="67px" height="60px" id="assist-2p-Icon"></td>
+              </tr>
+              <tr class="eraser-2p-row3">
+                <td class="eraser-2p-1"></td>
+                <td class="eraser-2p-2"></td>
+              </tr>
+            </tbody>
+          </table>
+          <button id="assist-2p">消しゴムをふる✋<br>（１回まで）</button>
+        </div>
+        
+      </section>
+
+      <!-- プレイヤー２得点表 -->
+      <section id="Player2HpContainer">
+        <label>HP: <input type="text" value="100" id="HP-2p"></label>
+        <button class="minus-2p" id="minus50-2p">-50</button>
+        <button class="minus-2p" id="minus40-2p">-40</button>
+        <button class="minus-2p" id="minus30-2p">-30</button>
+        <button class="minus-2p" id="minus20-2p">-20</button>
+        <button class="minus-2p" id="minus10-2p">-10</button>
+        <button class="plus-2p" id="plus10-2p">+10</button>
+        <button class="plus-2p" id="plus20-2p">+20</button>
+        <button class="plus-2p" id="plus30-2p">+30</button>
+        <button id="reset-2p">リセット</button>
+      </section>
+
+    </div>
+
+    <p id="losevoice-2p"></p>
+
+
+    <section id="Player2Mahoen">
+      <table>
+        <tbody>
+          <tr class="row-1">
+            <td class="mahoen-2p-1" style="background:#ccc;"></td>
+            <td class="mahoen-2p-2"></td>
+            <td class="mahoen-2p-3"></td>
+            <td class="mahoen-2p-4"></td>
+            <td class="mahoen-2p-5"></td>
+            <td class="mahoen-2p-6"></td>
+            <td class="mahoen-2p-7"></td>
+            <td class="mahoen-2p-8"></td>
+            <td class="mahoen-2p-9" style="background:#ccc;"></td>
+          </tr>
+          <tr class="row-2">
+            <td class="mahoen-2p-1" id="clmid-2p-1" style="background:#ccc;"></td>
+            <td class="mahoen-2p-2" id="clmid-2p-2"><img src="Player2.png" id="clmid-2p-img" width="63px" height="56px">
+            </td>
+            <td class="mahoen-2p-3" id="clmid-2p-3"></td>
+            <td class="mahoen-2p-4" id="clmid-2p-4"></td>
+            <td class="mahoen-2p-5" id="clmid-2p-5"></td>
+            <td class="mahoen-2p-6" id="commandTop-2p"></td>
+            <td class="mahoen-2p-7" id="clmid-2p-7"></td>
+            <td class="mahoen-2p-8" id="commandButtom-2p"></td>
+            <td class="mahoen-2p-9" id="clmid-2p-9" style="background:#ccc;"></td>
+          </tr>
+          <tr class="row-3">
+            <td class="mahoen-2p-1" style="background:#ccc;"></td>
+            <td class="mahoen-2p-2"></td>
+            <td class="mahoen-2p-3"></td>
+            <td class="mahoen-2p-4"></td>
+            <td class="mahoen-2p-5"></td>
+            <td class="mahoen-2p-6"></td>
+            <td class="mahoen-2p-7"></td>
+            <td class="mahoen-2p-8"></td>
+            <td class="mahoen-2p-9" style="background:#ccc;"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- キャラ選択・ケシゴム選択 ナビ画面２ｐ -->
+    <section id="player2Select">
+      <div>
+        <!-- キャラ選択 -->
+        <label>
+          <select id="wizardSelect-2p">
+            <option>-魔法使いを選んでね-</option>
+            <option>ミスラ ★</option>
+            <option>オズ ★</option>
+            <option>フィガロ ●</option>
+            <option>ファウスト ●</option>
+            <option>シノとヒース ●</option>
+            <option>アーサー ★</option>
+            <option>ネロ ★</option>
+            <option>ブラッドリー ★</option>
+            <option>レノックス ●</option>
+            <option>フィガロ ★（調整版）</option>
+            <option>リケとミチル ●</option>
+            <option>ムル ●</option>
+            <option>シャイロック ●</option>
+            <option>カイン ●</option>
+            <option>オーエン ★</option>
+            <option>スノウとホワイト ★</option>
+          </select>
+        </label>
+        <label>
+          <select id="assistSelect-2p">
+            <option>-ケシゴムを選んでね-</option>
+            <option>ルチル</option>
+            <option>クロエとラスティカ</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
 
   </main>
 

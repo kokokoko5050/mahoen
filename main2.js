@@ -58,7 +58,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
     '【LOSE】「はぁ！？俺負けたんですか！？」',
   ],
     misuraCommandTop = [
-      "《ｱﾙｼﾑ》 全員に40のダメージ",
+      "《ｱﾙｼﾑ》 全員に30のダメージ",
       "ねむい",
       "《ｱﾙｼﾑ》 クラーケンにへんしん！",
       "《ｱﾙｼﾑ》 相手を凍らせた もう一回振る",
@@ -66,7 +66,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
       "あはは！"
     ],
     misuraCommandButtom = [
-      "まきつき攻撃 全員に70ダメージ",
+      "まきつき攻撃 全員に50ダメージ",
       "うでがもげた！ 次の１回の攻撃力 -30",
       "まきつき攻撃 全員に50ダメージ",
       "まきつき攻撃 全員に30ダメージ",
@@ -84,7 +84,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
     '【LOSE】「……。」',
   ],
     ozCommandTop = [
-      "《ｳﾞｫｸｽﾉｸ》 全員に40のダメージ",
+      "《ｳﾞｫｸｽﾉｸ》 全員に30のダメージ",
       "リヴァイアサンにへんしん",
       "《ｳﾞｫｸｽﾉ... ねむってしまった ",
       "アーサーがみている ★に20ダメージ",
@@ -268,7 +268,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
       "はぁっ！ ★に30のダメージ",
       "そうび",
       "ひつじが通りすぎた 全員に20のダメージ",
-      "わすれていた 《ﾌｫｰｾﾀｵ･ﾒﾕｰｳﾞｧ》",
+      "呪文をわすれていた！ 全員に10のダメージ",
     ],
     lennoxCommandButtom = [
       "",
@@ -289,7 +289,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
   ],
     figaroAdCommandTop = [
       "《ﾎﾟｯｼﾃﾞｵ》 味方のHP40かいふく",
-      "ミチルがみている ごまかすのにひっしだ",
+      "ミチルがみている 全員に10のダメージ",
       "むしけらが ●に30のダメージ",
       "けだものが ★に30のダメージ",
       "ちりにしてあげよう 全員に40のダメージ",
@@ -368,7 +368,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
       "けむりを出した 次の１回はダメージをうけない",
       "なげキスをおくった！ 全員よろこんだ",
       "《ｲﾝｳﾞｨｰﾍﾞﾙ》 自分の回まで攻撃をはね返す",
-      "しんぞうがもえる！",
+      "しんぞうがもえる！ 20のダメージをうけた",
     ],
     shylockCommandButtom = [
       "",
@@ -446,10 +446,10 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
       "夜になった 絵にとじこめられた",
     ],
     snowWhiteCommandButtom = [
-      "《ﾉｽｺﾑﾆｱ》 ★に60のダメージ",
-      "《ﾉｽｺﾑﾆｱ》 ★に60のダメージ",
-      "《ﾉｽｺﾑﾆｱ》 ●に40のダメージ",
-      "《ﾉｽｺﾑﾆｱ》 ●に40のダメージ",
+      "《ﾉｽｺﾑﾆｱ》 ★に50のダメージ",
+      "《ﾉｽｺﾑﾆｱ》 ★に50のダメージ",
+      "《ﾉｽｺﾑﾆｱ》 ●に30のダメージ",
+      "《ﾉｽｺﾑﾆｱ》 ●に30のダメージ",
       "《ﾉｽｺﾑﾆｱ》 全員に30のダメージ",
       "絵にとじこめられた こどものすがたに",
     ];
@@ -544,7 +544,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
         CommandButtomExp = ozCommandButtom;
         LockedViewExp = ozLockedView;
         break;
-      case 'フィガロ ★':
+      case 'フィガロ ●':
         CommandTopExp = figaroCommandTop;
         CommandButtomExp = figaroCommandButtom;
         LockedViewExp = figaroLockedView;
