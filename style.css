@@ -6,6 +6,17 @@
   font-size: 16px;
 }
 
+@keyframes scrollBackground {
+  0% { background-position: 0 0; }
+  100% { background-position: -1000px 0; }
+}
+
+body {
+  background: url('misura.png') ;
+  animation: scrollBackground 10s linear infinite;
+}
+
+
 img {
   vertical-align: bottom;
 }
@@ -18,14 +29,33 @@ header {
 }
 
 h1{
-  font-size: 32px;
+  font-size: 24px;
   display: inline;
+  color: #fff;
   /* background: pink; */
 }
 
+@keyframes rainbow { 
+  0% {color: red;} 
+  15% {color: orange;} 
+  30% {color: yellow;} 
+  45% {color: green;} 
+  60% {color: blue;} 
+  75% {color: indigo;} 
+  90% {color: violet;} 
+  100% {color: red;} 
+} 
+
+.rainbow-text { 
+  animation: rainbow 3s linear infinite; 
+  font-weight: bold; 
+  font-size: 32px;
+}
+
+
 /* まほエンとは… */
 .mahoenExp {
-  background: rgb(182, 255, 140);
+  background: rgb(102, 255, 0);
   display: flex;
   text-align: center;
   justify-content: center;
@@ -43,16 +73,20 @@ h1{
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
-}
 
+ } 
+ 
 .mahoenExp h2 {
   font-size: 24px;
-  /* margin-top: 32px; */
 }
+
+
+
 
 .mahoenExp p {
   margin-top: 16px;
   line-height: 2;
+  font-weight: bold;
 }
 
 #battleStart {
@@ -92,6 +126,16 @@ h1{
 
 .mahoyakuExp h2 {
   font-size: 24px;
+  width: 350px;
+  margin: 0 auto;
+  color: pink;
+  text-shadow: 2px 2px 2px red;
+  background: linear-gradient(to bottom, skyblue, blue);
+  border-radius: 8px;
+}
+
+.mahoyakuExp img{
+  margin-top: 16px;
 }
 
 .mahoyakuExp p {
@@ -112,9 +156,14 @@ h1{
   color: white;
 }
 
+@keyframes blink { 
+  0%, 100% { color: red; } 
+  50% { color: blue; } 
+}
+
 span{
   font-weight: bold;
-  color: blue;
+  animation: blink 2s infinite;
 }
 
 footer{
