@@ -8,11 +8,12 @@
 
 @keyframes scrollBackground {
   0% { background-position: 0 0; }
-  100% { background-position: -1000px 0; }
+  100% { background-position: -500px 0; }
 }
 
 body {
-  background: url('misura.png') ;
+  background: url('haikei.png') ;
+  background-size: 1000px;
   animation: scrollBackground 10s linear infinite;
 }
 
@@ -55,7 +56,7 @@ h1{
 
 /* まほエンとは… */
 .mahoenExp {
-  background: rgb(102, 255, 0);
+  background: rgba(102, 255, 0, 0.8);
   display: flex;
   text-align: center;
   justify-content: center;
@@ -77,27 +78,27 @@ h1{
  } 
  
 .mahoenExp h2 {
-  font-size: 24px;
+  font-size: 30px;
+  text-shadow: 1px 1px white;
 }
-
-
-
 
 .mahoenExp p {
   margin-top: 16px;
   line-height: 2;
   font-weight: bold;
+  text-shadow: 1px 1px white;
 }
 
 #battleStart {
   all: unset;
   margin-top: 32px;
   font-size: 24px;
-  padding: 8px 16px;
-  background: green;
-  color: white;
-  border-radius: 8px;
+  /* padding: 8px 16px; */
+  /* /* background: green;
+  color: white; */
+  /* border-radius: 8px; */
   cursor: pointer;
+  
 }
 
 #battleStart:hover {
@@ -110,6 +111,7 @@ h1{
   padding: 16px;
   max-width: 600px;
   margin: 0 auto;
+  background: white;
 }
 
 /* 魔法使いの約束って？ */
@@ -125,7 +127,7 @@ h1{
 }
 
 .mahoyakuExp h2 {
-  font-size: 24px;
+  font-size: 30px;
   width: 350px;
   margin: 0 auto;
   color: pink;
@@ -144,11 +146,12 @@ h1{
 
 .mahoyakuExp a {
   all: unset;
-  background: rgb(185, 216, 255);
-  border: 1px solid #333;
+  /* background: rgb(185, 216, 255);
+  border: 1px solid #333; */
   border-radius: 8px;
-  padding: 4px 8px;
+  padding: 8px 12px;
   cursor: pointer;
+  font-size: 24px;
 }
 
 .mahoyakuExp a:hover {
