@@ -50,7 +50,7 @@ h1{
 .rainbow-text { 
   animation: rainbow 3s linear infinite; 
   font-weight: bold; 
-  font-size: 32px;
+  font-size: 28px;
 }
 
 
@@ -101,10 +101,6 @@ h1{
   
 }
 
-#battleStart:hover {
-  /* opacity: 0.7; */
-}
-
 /* 注意書き */
 
 .warning{
@@ -117,7 +113,7 @@ h1{
 /* 魔法使いの約束って？ */
 .mahoyakuExp {
   box-sizing: border-box;
-  width: 500px;
+  width: 600px;
   margin: 16px auto 0;
   padding: 16px;
   text-align: center;
@@ -151,13 +147,9 @@ h1{
   border-radius: 8px;
   padding: 8px 12px;
   cursor: pointer;
-  font-size: 24px; */
+  font-size: 24px; 
 }
 
-.mahoyakuExp a:hover {
-  /* background: blue;
-  color: white; */
-}
 
 @keyframes blink { 
   0%, 100% { color: red; } 
@@ -168,6 +160,35 @@ span{
   font-weight: bold;
   animation: blink 2s infinite;
 }
+
+/* GIFアニメのコーナー */
+.gifContainer {
+  box-sizing: border-box;
+  width: 600px;
+  margin: 16px auto 0;
+  padding: 16px;
+  text-align: center;
+  border-radius: 32px;
+  background: rgb(255, 242, 215);
+  border: 8px ridge rgb(255, 164, 108);
+}
+
+.gifContainer h2 {
+  font-size: 30px;
+  width: 350px;
+  margin: 0 auto;
+  color: rgb(255, 136, 0);
+  text-shadow: 2px 2px 2px rgb(60, 0, 255);
+  background: linear-gradient(to bottom, rgb(235, 228, 135), rgb(255, 0, 0));
+  border-radius: 8px;
+}
+
+.gifContainer div{
+  margin-top: 8px;
+}
+
+
+/* フッター */
 
 footer{
   background: #222;
@@ -275,5 +296,10 @@ footer p{
   .mahoyakuExp {
     width: 100%;
   }
+
+  .gifContainer {
+    width: 100%;
+  }
+
 
 }
