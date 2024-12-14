@@ -784,6 +784,18 @@ nav {
   width: 60px;
 }
 
+/* リセットボタン */
+#reset-1p,
+#reset-2p {
+  margin-left: 8px;
+  cursor: pointer;
+  color: #333;
+  border: 1px solid #333;
+  background: #ffffff;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
 
 /* ここから２Ｐ！！！！！！！！！!！！！！！！！ */
 
