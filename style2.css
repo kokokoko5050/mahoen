@@ -35,6 +35,16 @@ td {
   transform: translate(0, -1500px);
 }
 
+.mask {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
 /* 推奨文言 */
 #recommendPage{
   position: fixed;
@@ -48,7 +58,7 @@ td {
   background: white;
   border-radius: 16px;
   border: 1px solid #333;
-  z-index: 2;
+  z-index: 3;
   padding: 16px;
 }
 

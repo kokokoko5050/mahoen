@@ -4,6 +4,7 @@
 // 推奨画面の出し入れ
 document.querySelector('#recommendHidden').addEventListener('click', () => {
   document.querySelector('#recommendPage').classList.toggle('hidden')
+  document.querySelector('#divMask').classList.toggle('mask')
 });
 
 // ナビの出し入れ
