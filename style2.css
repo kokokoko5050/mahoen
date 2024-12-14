@@ -594,7 +594,7 @@ nav {
   background: #fff;
   color: #333;
   border: 1px solid #333;
-  padding: 4px;
+  padding: 2px 6px;
 }
 
 .plus-1p {
@@ -602,7 +602,7 @@ nav {
   color: white;
   background: #333;
   border-radius: 4px;
-  padding: 4px;
+  padding: 2px 6px;
 }
 
 #reset {
@@ -613,7 +613,7 @@ nav {
   background: #ffffff;
   border-radius: 4px;
   font-weight: bold;
-  padding: 2px 4px;
+  padding: 2px 6px;
 }
 
 #assist-1p {

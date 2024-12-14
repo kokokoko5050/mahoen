@@ -2,10 +2,10 @@
 
 {
 
-// ナビの出し入れ
-document.querySelector('#explainIcon').addEventListener('click', () => {
-  document.querySelector('nav').classList.toggle('hiddenNav')
-});
+  // ナビの出し入れ
+  document.querySelector('#explainIcon').addEventListener('click', () => {
+    document.querySelector('nav').classList.toggle('hiddenNav')
+  });
 
   // 遊びかたの出し入れ
   document.querySelector('#Howto').addEventListener('click', () => {
@@ -640,545 +640,545 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
     });
   });
 
-{
-  
-  // 1pの魔法使いを選択する際、実配列を仮配列に代入
-  const wizardSelectElement = document.querySelector('#wizardSelect-1p');
-  wizardSelectElement.addEventListener('change', () => {
-    const wizardSelect = wizardSelectElement.value;
-    switch (wizardSelect) {
-      case 'ミスラ ★':
-        CommandTop1p = misuraCommandTop;
-        CommandButtom1p = misuraCommandButtom;
-        LockedView1p = misuraLockedView;
-        break;
-      case 'オズ ★':
-        CommandTop1p = ozCommandTop;
-        CommandButtom1p = ozCommandButtom;
-        LockedView1p = ozLockedView;
-        break;
-      case 'フィガロ ●':
-        CommandTop1p = figaroCommandTop;
-        CommandButtom1p = figaroCommandButtom;
-        LockedView1p = figaroLockedView;
-        break;
-      case 'ファウスト ●':
-        CommandTop1p = faustCommandTop;
-        CommandButtom1p = faustCommandButtom;
-        LockedView1p = faustLockedView;
-        break;
-      case 'シノとヒース ●':
-        CommandTop1p = shinoHeathCommandTop;
-        CommandButtom1p = shinoHeathCommandButtom;
-        LockedView1p = shinoHeathLockedView;
-        break;
-      case 'アーサー ★':
-        CommandTop1p = arthurCommandTop;
-        CommandButtom1p = arthurCommandButtom;
-        LockedView1p = arthurLockedView;
-        break;
-      case 'ネロ ★':
-        CommandTop1p = neroCommandTop;
-        CommandButtom1p = neroCommandButtom;
-        LockedView1p = neroLockedView;
-        break;
-      case 'ブラッドリー ★':
-        CommandTop1p = bradleyCommandTop;
-        CommandButtom1p = bradleyCommandButtom;
-        LockedView1p = bradleyLockedView;
-        break;
-      case 'レノックス ●':
-        CommandTop1p = lennoxCommandTop;
-        CommandButtom1p = lennoxCommandButtom;
-        LockedView1p = lennoxLockedView;
-        break;
-      case 'フィガロ ★（調整版）':
-        CommandTop1p = figaroAdCommandTop;
-        CommandButtom1p = figaroAdCommandButtom;
-        LockedView1p = figaroAdLockedView;
-        break;
-      case 'リケとミチル ●':
-        CommandTop1p = riquetMitileCommandTop;
-        CommandButtom1p = riquetMitileCommandButtom;
-        LockedView1p = riquetMitileLockedView;
-        break;
-      case 'ムル ●':
-        CommandTop1p = murrCommandTop;
-        CommandButtom1p = murrCommandButtom;
-        LockedView1p = murrLockedView;
-        break;
-      case 'シャイロック ●':
-        CommandTop1p = shylockCommandTop;
-        CommandButtom1p = shylockCommandButtom;
-        LockedView1p = shylockLockedView;
-        break;
-      case 'カイン ●':
-        CommandTop1p = cainCommandTop;
-        CommandButtom1p = cainCommandButtom;
-        LockedView1p = cainLockedView;
-        break;
-      case 'オーエン ★':
-        CommandTop1p = owenCommandTop;
-        CommandButtom1p = owenCommandButtom;
-        LockedView1p = owenLockedView;
-        break;
-      case 'スノウとホワイト ★':
-        CommandTop1p = snowWhiteCommandTop;
-        CommandButtom1p = snowWhiteCommandButtom;
-        LockedView1p = snowWhiteLockedView;
-        break;
-    }
+  {
 
-    // まほエンのデフォルト表示は配列の0番目とする
-    document.querySelector('#commandTop-1p').textContent = CommandTop1p[0];
-    document.querySelector('#commandButtom-1p').textContent = CommandButtom1p[0];
+    // 1pの魔法使いを選択する際、実配列を仮配列に代入
+    const wizardSelectElement = document.querySelector('#wizardSelect-1p');
+    wizardSelectElement.addEventListener('change', () => {
+      const wizardSelect = wizardSelectElement.value;
+      switch (wizardSelect) {
+        case 'ミスラ ★':
+          CommandTop1p = misuraCommandTop;
+          CommandButtom1p = misuraCommandButtom;
+          LockedView1p = misuraLockedView;
+          break;
+        case 'オズ ★':
+          CommandTop1p = ozCommandTop;
+          CommandButtom1p = ozCommandButtom;
+          LockedView1p = ozLockedView;
+          break;
+        case 'フィガロ ●':
+          CommandTop1p = figaroCommandTop;
+          CommandButtom1p = figaroCommandButtom;
+          LockedView1p = figaroLockedView;
+          break;
+        case 'ファウスト ●':
+          CommandTop1p = faustCommandTop;
+          CommandButtom1p = faustCommandButtom;
+          LockedView1p = faustLockedView;
+          break;
+        case 'シノとヒース ●':
+          CommandTop1p = shinoHeathCommandTop;
+          CommandButtom1p = shinoHeathCommandButtom;
+          LockedView1p = shinoHeathLockedView;
+          break;
+        case 'アーサー ★':
+          CommandTop1p = arthurCommandTop;
+          CommandButtom1p = arthurCommandButtom;
+          LockedView1p = arthurLockedView;
+          break;
+        case 'ネロ ★':
+          CommandTop1p = neroCommandTop;
+          CommandButtom1p = neroCommandButtom;
+          LockedView1p = neroLockedView;
+          break;
+        case 'ブラッドリー ★':
+          CommandTop1p = bradleyCommandTop;
+          CommandButtom1p = bradleyCommandButtom;
+          LockedView1p = bradleyLockedView;
+          break;
+        case 'レノックス ●':
+          CommandTop1p = lennoxCommandTop;
+          CommandButtom1p = lennoxCommandButtom;
+          LockedView1p = lennoxLockedView;
+          break;
+        case 'フィガロ ★（調整版）':
+          CommandTop1p = figaroAdCommandTop;
+          CommandButtom1p = figaroAdCommandButtom;
+          LockedView1p = figaroAdLockedView;
+          break;
+        case 'リケとミチル ●':
+          CommandTop1p = riquetMitileCommandTop;
+          CommandButtom1p = riquetMitileCommandButtom;
+          LockedView1p = riquetMitileLockedView;
+          break;
+        case 'ムル ●':
+          CommandTop1p = murrCommandTop;
+          CommandButtom1p = murrCommandButtom;
+          LockedView1p = murrLockedView;
+          break;
+        case 'シャイロック ●':
+          CommandTop1p = shylockCommandTop;
+          CommandButtom1p = shylockCommandButtom;
+          LockedView1p = shylockLockedView;
+          break;
+        case 'カイン ●':
+          CommandTop1p = cainCommandTop;
+          CommandButtom1p = cainCommandButtom;
+          LockedView1p = cainLockedView;
+          break;
+        case 'オーエン ★':
+          CommandTop1p = owenCommandTop;
+          CommandButtom1p = owenCommandButtom;
+          LockedView1p = owenLockedView;
+          break;
+        case 'スノウとホワイト ★':
+          CommandTop1p = snowWhiteCommandTop;
+          CommandButtom1p = snowWhiteCommandButtom;
+          LockedView1p = snowWhiteLockedView;
+          break;
+      }
 
-    // まほエンの色設定（複数あるためAllで取得）
-    document.querySelectorAll('.mahoen-1p-1').forEach((element) => {
-      element.style.background = LockedView1p[5];
-    });
-    document.querySelectorAll('.mahoen-1p-9').forEach((element) => {
-      element.style.background = LockedView1p[5];
-    });
+      // まほエンのデフォルト表示は配列の0番目とする
+      document.querySelector('#commandTop-1p').textContent = CommandTop1p[0];
+      document.querySelector('#commandButtom-1p').textContent = CommandButtom1p[0];
 
-    // 動かない表示の設定
-    document.querySelector('#clmid-1p-img').src = LockedView1p[0];
-    document.querySelector('#clmid-1p-3').textContent = LockedView1p[1];
-    document.querySelector('#clmid-1p-5').textContent = LockedView1p[2];
-    document.querySelector('#clmid-1p-7').textContent = LockedView1p[3];
-
-  });
-
-  // 1pのケシゴムを選択する際、実配列を仮配列に代入
-  document.querySelector('#assistSelect-1p').addEventListener('change', () => {
-    const assistSelect = document.querySelector('#assistSelect-1p').value;
-    switch (assistSelect) {
-      case 'ルチル':
-        EraserCommand1p = rutileEraserCommand;
-        break;
-      case 'クロエとラスティカ':
-        EraserCommand1p = chloeRusticaEraserCommand;
-        break;
-    }
-    document.querySelector('#assist-1p-Command').textContent = EraserCommand1p[0];
-    document.querySelector('#assist-1p-Icon').src = EraserCommand1p[6];
-  });
-
-  // 1pの装備を選択する際、実配列を仮配列に代入
-  document.querySelector('#equipSelect-1p').addEventListener('change', () => {
-    const equipSelect = document.querySelector('#equipSelect-1p').value;
-    switch (equipSelect) {
-      case 'おおがま':
-        EquipCommand1p = sickleEquipCommand;
-        document.querySelector('#equip-1p').disabled = false;
-        break;
-      case 'きしだんの剣':
-        EquipCommand1p = swordEquipCommand;
-        document.querySelector('#equip-1p').disabled = false;
-        break;
-      case 'メイス':
-        EquipCommand1p = maceEquipCommand;
-        document.querySelector('#equip-1p').disabled = false;
-        break;
-    }
-  });
-
-  // 1pの装備するボタンをクリック=>装備コマンドを表示、モードをtrueに
-  document.querySelector('#equip-1p').addEventListener('click', () => {
-
-    if (equipMode1p === false) {
-      // 文字と色を変える
-      document.querySelector('#clmid-1p-9').textContent = EquipCommand1p[0];
-      document.querySelectorAll('.mahoen-1p-9').forEach((element) => {
-        element.style.background = EquipCommand1p[6];
-      });
-      // ボタンの表記を変更
-      document.querySelector('#equip-1p').textContent = '装備を外す！';
-      equipMode1p = true;
-    } else {
-      document.querySelector('#clmid-1p-9').textContent = '';
-      document.querySelectorAll('.mahoen-1p-9').forEach((element) => {
-        element.style.background = LockedView1p[5];
-      });
-      document.querySelector('#equip-1p').textContent = '装備する！';
-      equipMode1p = false;
-    }
-  });
-
-  // 1pの呪いボタンをクリック=>呪いコマンドを表示、モードをtrueに
-  document.querySelector('#curse-1p').addEventListener('click', () => {
-    if (curseMode1p === false) {
-      document.querySelector('#clmid-1p-1').textContent = curseCommand[0];
-      document.querySelectorAll('.mahoen-1p-1').forEach((element) => {
-        element.style.background = curseCommand[6];
-      });
-      document.querySelector('#curse-1p').textContent = '呪いを浄化';
-      curseMode1p = true;
-    } else {
-      document.querySelector('#clmid-1p-1').textContent = '';
+      // まほエンの色設定（複数あるためAllで取得）
       document.querySelectorAll('.mahoen-1p-1').forEach((element) => {
         element.style.background = LockedView1p[5];
       });
-      document.querySelector('#curse-1p').textContent = '呪われた！';
-      curseMode1p = false;
-    }
-  });
+      document.querySelectorAll('.mahoen-1p-9').forEach((element) => {
+        element.style.background = LockedView1p[5];
+      });
 
-  // 1pのボタンをクリック=>コマンド配列をランダムで表内に表示
-  const attack1Player = document.querySelector('#attack-1p')
-  attack1Player.addEventListener('click', () => {
+      // 動かない表示の設定
+      document.querySelector('#clmid-1p-img').src = LockedView1p[0];
+      document.querySelector('#clmid-1p-3').textContent = LockedView1p[1];
+      document.querySelector('#clmid-1p-5').textContent = LockedView1p[2];
+      document.querySelector('#clmid-1p-7').textContent = LockedView1p[3];
 
-    const interval = setInterval(() => {
-      let n = Math.floor(Math.random() * 6)
-      document.querySelector('#commandTop-1p').textContent = CommandTop1p[n]
-      document.querySelector('#commandButtom-1p').textContent = CommandButtom1p[n];
-      // 装備モードがtrueの際は装備コマンドを表示
-      if (equipMode1p === true) {
-        document.querySelector('#clmid-1p-9').textContent = EquipCommand1p[n];
+    });
+
+    // 1pのケシゴムを選択する際、実配列を仮配列に代入
+    document.querySelector('#assistSelect-1p').addEventListener('change', () => {
+      const assistSelect = document.querySelector('#assistSelect-1p').value;
+      switch (assistSelect) {
+        case 'ルチル':
+          EraserCommand1p = rutileEraserCommand;
+          break;
+        case 'クロエとラスティカ':
+          EraserCommand1p = chloeRusticaEraserCommand;
+          break;
       }
-      // 呪いモードがtrueの際は呪いコマンドを表示
-      if (curseMode1p === true) {
-        document.querySelector('#clmid-1p-1').textContent = curseCommand[n];
+      document.querySelector('#assist-1p-Command').textContent = EraserCommand1p[0];
+      document.querySelector('#assist-1p-Icon').src = EraserCommand1p[6];
+    });
+
+    // 1pの装備を選択する際、実配列を仮配列に代入
+    document.querySelector('#equipSelect-1p').addEventListener('change', () => {
+      const equipSelect = document.querySelector('#equipSelect-1p').value;
+      switch (equipSelect) {
+        case 'おおがま':
+          EquipCommand1p = sickleEquipCommand;
+          document.querySelector('#equip-1p').disabled = false;
+          break;
+        case 'きしだんの剣':
+          EquipCommand1p = swordEquipCommand;
+          document.querySelector('#equip-1p').disabled = false;
+          break;
+        case 'メイス':
+          EquipCommand1p = maceEquipCommand;
+          document.querySelector('#equip-1p').disabled = false;
+          break;
       }
-    }, 25);
-    setTimeout(() => {
-      clearInterval(interval);
-    }, 1000);
+    });
 
-  });
+    // 1pの装備するボタンをクリック=>装備コマンドを表示、モードをtrueに
+    document.querySelector('#equip-1p').addEventListener('click', () => {
 
-  // 1pのボタンをクリック=>交流ケシゴムをランダムで表内に表示
-  const assist1Player = document.querySelector('#assist-1p')
-  assist1Player.addEventListener('click', () => {
+      if (equipMode1p === false) {
+        // 文字と色を変える
+        document.querySelector('#clmid-1p-9').textContent = EquipCommand1p[0];
+        document.querySelectorAll('.mahoen-1p-9').forEach((element) => {
+          element.style.background = EquipCommand1p[6];
+        });
+        // ボタンの表記を変更
+        document.querySelector('#equip-1p').textContent = '装備を外す！';
+        equipMode1p = true;
+      } else {
+        document.querySelector('#clmid-1p-9').textContent = '';
+        document.querySelectorAll('.mahoen-1p-9').forEach((element) => {
+          element.style.background = LockedView1p[5];
+        });
+        document.querySelector('#equip-1p').textContent = '装備する！';
+        equipMode1p = false;
+      }
+    });
 
-    const interval = setInterval(() => {
-      let n = Math.floor(Math.random() * 6)
-      document.querySelector('#assist-1p-Command').textContent = EraserCommand1p[n]
-    }, 25);
-    setTimeout(() => {
-      clearInterval(interval);
-    }, 1000);
+    // 1pの呪いボタンをクリック=>呪いコマンドを表示、モードをtrueに
+    document.querySelector('#curse-1p').addEventListener('click', () => {
+      if (curseMode1p === false) {
+        document.querySelector('#clmid-1p-1').textContent = curseCommand[0];
+        document.querySelectorAll('.mahoen-1p-1').forEach((element) => {
+          element.style.background = curseCommand[6];
+        });
+        document.querySelector('#curse-1p').textContent = '呪いを浄化';
+        curseMode1p = true;
+      } else {
+        document.querySelector('#clmid-1p-1').textContent = '';
+        document.querySelectorAll('.mahoen-1p-1').forEach((element) => {
+          element.style.background = LockedView1p[5];
+        });
+        document.querySelector('#curse-1p').textContent = '呪われた！';
+        curseMode1p = false;
+      }
+    });
 
-    // assist1Player.disabled = true;
-  });
-
-  // マイナスボタンをクリックする際、値から差し引く
-  const updateHP = (buttonId, decrement) => {
-    document.querySelector(buttonId).addEventListener('click', () => {
-      // HPの値を10進数の数値として解釈する
-      let count = parseInt(document.querySelector('#HP-1p').value, 10);
-      const targetValue =
-        (decrement > 0) ? count - decrement : count + (-decrement);
-      const counterElement = document.querySelector('#HP-1p');
+    // 1pのボタンをクリック=>コマンド配列をランダムで表内に表示
+    const attack1Player = document.querySelector('#attack-1p')
+    attack1Player.addEventListener('click', () => {
 
       const interval = setInterval(() => {
-        if (decrement > 0) {
-          count--;
-        } else {
-          count++;
-          // 値が100以上にならないように制御 
-          if (count > 100) {
-            count = 100; clearInterval(interval);
+        let n = Math.floor(Math.random() * 6)
+        document.querySelector('#commandTop-1p').textContent = CommandTop1p[n]
+        document.querySelector('#commandButtom-1p').textContent = CommandButtom1p[n];
+        // 装備モードがtrueの際は装備コマンドを表示
+        if (equipMode1p === true) {
+          document.querySelector('#clmid-1p-9').textContent = EquipCommand1p[n];
+        }
+        // 呪いモードがtrueの際は呪いコマンドを表示
+        if (curseMode1p === true) {
+          document.querySelector('#clmid-1p-1').textContent = curseCommand[n];
+        }
+      }, 25);
+      setTimeout(() => {
+        clearInterval(interval);
+      }, 1000);
+
+    });
+
+    // 1pのボタンをクリック=>交流ケシゴムをランダムで表内に表示
+    const assist1Player = document.querySelector('#assist-1p')
+    assist1Player.addEventListener('click', () => {
+
+      const interval = setInterval(() => {
+        let n = Math.floor(Math.random() * 6)
+        document.querySelector('#assist-1p-Command').textContent = EraserCommand1p[n]
+      }, 25);
+      setTimeout(() => {
+        clearInterval(interval);
+      }, 1000);
+
+      // assist1Player.disabled = true;
+    });
+
+    // マイナスボタンをクリックする際、値から差し引く
+    const updateHP = (buttonId, decrement) => {
+      document.querySelector(buttonId).addEventListener('click', () => {
+        // HPの値を10進数の数値として解釈する
+        let count = parseInt(document.querySelector('#HP-1p').value, 10);
+        const targetValue =
+          (decrement > 0) ? count - decrement : count + (-decrement);
+        const counterElement = document.querySelector('#HP-1p');
+
+        const interval = setInterval(() => {
+          if (decrement > 0) {
+            count--;
+          } else {
+            count++;
+            // 値が100以上にならないように制御 
+            if (count > 100) {
+              count = 100; clearInterval(interval);
+            }
           }
-        }
-        counterElement.value = count;
+          counterElement.value = count;
 
-        if ((decrement > 0 && count <= targetValue) || (decrement < 0 && count >= targetValue) || count <= 0) {
-          clearInterval(interval);
-        }
-        // 値が0以下になった時喋る
-        if (count <= 0) {
-          document.querySelector('#losevoice-1p').textContent = LockedView1p[6];
-        }
-      }, 5);
-    });
-  };
-  // 1pのボタンごとに関数を呼び出す 
-  updateHP('#minus50-1p', 50);
-  updateHP('#minus40-1p', 40);
-  updateHP('#minus30-1p', 30);
-  updateHP('#minus20-1p', 20);
-  updateHP('#minus10-1p', 10);
-  updateHP('#plus10-1p', - 10);
-  updateHP('#plus20-1p', - 20);
-  updateHP('#plus30-1p', - 30);
-
-
-}
-
-// ここから２Pーーーーーーーーーーーーーーーーーーーーーーーーー
-
-{
-
-  // 2pの魔法使いを選択する際、実配列を仮配列に代入
-  const wizardSelectElement = document.querySelector('#wizardSelect-2p');
-  wizardSelectElement.addEventListener('change', () => {
-    const wizardSelect = wizardSelectElement.value;
-    switch (wizardSelect) {
-      case 'ミスラ ★':
-        CommandTop2p = misuraCommandTop;
-        CommandButtom2p = misuraCommandButtom;
-        LockedView2p = misuraLockedView;
-        break;
-      case 'オズ ★':
-        CommandTop2p = ozCommandTop;
-        CommandButtom2p = ozCommandButtom;
-        LockedView2p = ozLockedView;
-        break;
-      case 'フィガロ ●':
-        CommandTop2p = figaroCommandTop;
-        CommandButtom2p = figaroCommandButtom;
-        LockedView2p = figaroLockedView;
-        break;
-      case 'ファウスト ●':
-        CommandTop2p = faustCommandTop;
-        CommandButtom2p = faustCommandButtom;
-        LockedView2p = faustLockedView;
-        break;
-      case 'シノとヒース ●':
-        CommandTop2p = shinoHeathCommandTop;
-        CommandButtom2p = shinoHeathCommandButtom;
-        LockedView2p = shinoHeathLockedView;
-        break;
-      case 'アーサー ★':
-        CommandTop2p = arthurCommandTop;
-        CommandButtom2p = arthurCommandButtom;
-        LockedView2p = arthurLockedView;
-        break;
-      case 'ネロ ★':
-        CommandTop2p = neroCommandTop;
-        CommandButtom2p = neroCommandButtom;
-        LockedView2p = neroLockedView;
-        break;
-      case 'ブラッドリー ★':
-        CommandTop2p = bradleyCommandTop;
-        CommandButtom2p = bradleyCommandButtom;
-        LockedView2p = bradleyLockedView;
-        break;
-      case 'レノックス ●':
-        CommandTop2p = lennoxCommandTop;
-        CommandButtom2p = lennoxCommandButtom;
-        LockedView2p = lennoxLockedView;
-        break;
-      case 'フィガロ ★（調整版）':
-        CommandTop2p = figaroAdCommandTop;
-        CommandButtom2p = figaroAdCommandButtom;
-        LockedView2p = figaroAdLockedView;
-        break;
-      case 'リケとミチル ●':
-        CommandTop2p = riquetMitileCommandTop;
-        CommandButtom2p = riquetMitileCommandButtom;
-        LockedView2p = riquetMitileLockedView;
-        break;
-      case 'ムル ●':
-        CommandTop2p = murrCommandTop;
-        CommandButtom2p = murrCommandButtom;
-        LockedView2p = murrLockedView;
-        break;
-      case 'シャイロック ●':
-        CommandTop2p = shylockCommandTop;
-        CommandButtom2p = shylockCommandButtom;
-        LockedView2p = shylockLockedView;
-        break;
-      case 'カイン ●':
-        CommandTop2p = cainCommandTop;
-        CommandButtom2p = cainCommandButtom;
-        LockedView2p = cainLockedView;
-        break;
-      case 'オーエン ★':
-        CommandTop2p = owenCommandTop;
-        CommandButtom2p = owenCommandButtom;
-        LockedView2p = owenLockedView;
-        break;
-      case 'スノウとホワイト ★':
-        CommandTop2p = snowWhiteCommandTop;
-        CommandButtom2p = snowWhiteCommandButtom;
-        LockedView2p = snowWhiteLockedView;
-        break;
-    }
-
-    // まほエンのデフォルト表示は配列の0番目とする
-    document.querySelector('#commandTop-2p').textContent = CommandTop2p[0];
-    document.querySelector('#commandButtom-2p').textContent = CommandButtom2p[0];
-
-    // まほエンの色設定（複数あるためAllで取得）
-    document.querySelectorAll('.mahoen-2p-1').forEach((element) => {
-      element.style.background = LockedView2p[5];
-    });
-    document.querySelectorAll('.mahoen-2p-9').forEach((element) => {
-      element.style.background = LockedView2p[5];
-    });
-
-    // 動かない表示の設定
-    document.querySelector('#clmid-2p-img').src = LockedView2p[0];
-    document.querySelector('#clmid-2p-3').textContent = LockedView2p[1];
-    document.querySelector('#clmid-2p-5').textContent = LockedView2p[2];
-    document.querySelector('#clmid-2p-7').textContent = LockedView2p[3];
-
-  });
-
-  // 2pのケシゴムを選択する際、実配列を仮配列に代入
-  document.querySelector('#assistSelect-2p').addEventListener('change', () => {
-    const assistSelect = document.querySelector('#assistSelect-2p').value;
-    switch (assistSelect) {
-      case 'ルチル':
-        EraserCommand2p = rutileEraserCommand;
-        break;
-      case 'クロエとラスティカ':
-        EraserCommand2p = chloeRusticaEraserCommand;
-        break;
-    }
-    document.querySelector('#assist-2p-Command').textContent = EraserCommand2p[0];
-    document.querySelector('#assist-2p-Icon').src = EraserCommand2p[6];
-  });
-
-  // 2pの装備を選択する際、実配列を仮配列に代入
-  document.querySelector('#equipSelect-2p').addEventListener('change', () => {
-    const equipSelect = document.querySelector('#equipSelect-2p').value;
-    switch (equipSelect) {
-      case 'おおがま':
-        EquipCommand2p = sickleEquipCommand;
-        document.querySelector('#equip-2p').disabled = false;
-        break;
-      case 'きしだんの剣':
-        EquipCommand2p = swordEquipCommand;
-        document.querySelector('#equip-2p').disabled = false;
-        break;
-      case 'メイス':
-        EquipCommand2p = maceEquipCommand;
-        document.querySelector('#equip-2p').disabled = false;
-        break;
-    }
-  });
-
-  // 2pの装備するボタンをクリック=>装備コマンドを表示、モードをtrueに
-  document.querySelector('#equip-2p').addEventListener('click', () => {
-
-    if (equipMode2p === false) {
-      // 文字と色を変える
-      document.querySelector('#clmid-2p-9').textContent = EquipCommand2p[0];
-      document.querySelectorAll('.mahoen-2p-9').forEach((element) => {
-        element.style.background = EquipCommand2p[6];
+          if ((decrement > 0 && count <= targetValue) || (decrement < 0 && count >= targetValue) || count <= 0) {
+            clearInterval(interval);
+          }
+          // 値が0以下になった時喋る
+          if (count <= 0) {
+            document.querySelector('#losevoice-1p').textContent = LockedView1p[6];
+          }
+        }, 5);
       });
-      // ボタンの表記を変更
-      document.querySelector('#equip-2p').textContent = '装備を外す！';
-      equipMode2p = true;
-    } else {
-      document.querySelector('#clmid-2p-9').textContent = '';
+    };
+    // 1pのボタンごとに関数を呼び出す 
+    updateHP('#minus50-1p', 50);
+    updateHP('#minus40-1p', 40);
+    updateHP('#minus30-1p', 30);
+    updateHP('#minus20-1p', 20);
+    updateHP('#minus10-1p', 10);
+    updateHP('#plus10-1p', - 10);
+    updateHP('#plus20-1p', - 20);
+    updateHP('#plus30-1p', - 30);
+
+
+  }
+
+  // ここから２Pーーーーーーーーーーーーーーーーーーーーーーーーー
+
+  {
+
+    // 2pの魔法使いを選択する際、実配列を仮配列に代入
+    const wizardSelectElement = document.querySelector('#wizardSelect-2p');
+    wizardSelectElement.addEventListener('change', () => {
+      const wizardSelect = wizardSelectElement.value;
+      switch (wizardSelect) {
+        case 'ミスラ ★':
+          CommandTop2p = misuraCommandTop;
+          CommandButtom2p = misuraCommandButtom;
+          LockedView2p = misuraLockedView;
+          break;
+        case 'オズ ★':
+          CommandTop2p = ozCommandTop;
+          CommandButtom2p = ozCommandButtom;
+          LockedView2p = ozLockedView;
+          break;
+        case 'フィガロ ●':
+          CommandTop2p = figaroCommandTop;
+          CommandButtom2p = figaroCommandButtom;
+          LockedView2p = figaroLockedView;
+          break;
+        case 'ファウスト ●':
+          CommandTop2p = faustCommandTop;
+          CommandButtom2p = faustCommandButtom;
+          LockedView2p = faustLockedView;
+          break;
+        case 'シノとヒース ●':
+          CommandTop2p = shinoHeathCommandTop;
+          CommandButtom2p = shinoHeathCommandButtom;
+          LockedView2p = shinoHeathLockedView;
+          break;
+        case 'アーサー ★':
+          CommandTop2p = arthurCommandTop;
+          CommandButtom2p = arthurCommandButtom;
+          LockedView2p = arthurLockedView;
+          break;
+        case 'ネロ ★':
+          CommandTop2p = neroCommandTop;
+          CommandButtom2p = neroCommandButtom;
+          LockedView2p = neroLockedView;
+          break;
+        case 'ブラッドリー ★':
+          CommandTop2p = bradleyCommandTop;
+          CommandButtom2p = bradleyCommandButtom;
+          LockedView2p = bradleyLockedView;
+          break;
+        case 'レノックス ●':
+          CommandTop2p = lennoxCommandTop;
+          CommandButtom2p = lennoxCommandButtom;
+          LockedView2p = lennoxLockedView;
+          break;
+        case 'フィガロ ★（調整版）':
+          CommandTop2p = figaroAdCommandTop;
+          CommandButtom2p = figaroAdCommandButtom;
+          LockedView2p = figaroAdLockedView;
+          break;
+        case 'リケとミチル ●':
+          CommandTop2p = riquetMitileCommandTop;
+          CommandButtom2p = riquetMitileCommandButtom;
+          LockedView2p = riquetMitileLockedView;
+          break;
+        case 'ムル ●':
+          CommandTop2p = murrCommandTop;
+          CommandButtom2p = murrCommandButtom;
+          LockedView2p = murrLockedView;
+          break;
+        case 'シャイロック ●':
+          CommandTop2p = shylockCommandTop;
+          CommandButtom2p = shylockCommandButtom;
+          LockedView2p = shylockLockedView;
+          break;
+        case 'カイン ●':
+          CommandTop2p = cainCommandTop;
+          CommandButtom2p = cainCommandButtom;
+          LockedView2p = cainLockedView;
+          break;
+        case 'オーエン ★':
+          CommandTop2p = owenCommandTop;
+          CommandButtom2p = owenCommandButtom;
+          LockedView2p = owenLockedView;
+          break;
+        case 'スノウとホワイト ★':
+          CommandTop2p = snowWhiteCommandTop;
+          CommandButtom2p = snowWhiteCommandButtom;
+          LockedView2p = snowWhiteLockedView;
+          break;
+      }
+
+      // まほエンのデフォルト表示は配列の0番目とする
+      document.querySelector('#commandTop-2p').textContent = CommandTop2p[0];
+      document.querySelector('#commandButtom-2p').textContent = CommandButtom2p[0];
+
+      // まほエンの色設定（複数あるためAllで取得）
+      document.querySelectorAll('.mahoen-2p-1').forEach((element) => {
+        element.style.background = LockedView2p[5];
+      });
       document.querySelectorAll('.mahoen-2p-9').forEach((element) => {
         element.style.background = LockedView2p[5];
       });
-      document.querySelector('#equip-2p').textContent = '装備する！';
-      equipMode2p = false;
-    }
-  });
 
-  // 2pの呪いボタンをクリック=>呪いコマンドを表示、モードをtrueに
-  document.querySelector('#curse-2p').addEventListener('click', () => {
-    if (curseMode2p === false) {
-      document.querySelector('#clmid-2p-1').textContent = curseCommand[0];
-      document.querySelectorAll('.mahoen-2p-1').forEach((element) => {
-        element.style.background = curseCommand[6];
-      });
-      document.querySelector('#curse-2p').textContent = '呪いを浄化';
-      curseMode2p = true;
-    } else {
-      document.querySelector('#clmid-2p-1').textContent = '';
-      document.querySelectorAll('.mahoen-2p-1').forEach((element) => {
-        element.style.background = LockedView2p[5];
-      });
-      document.querySelector('#curse-2p').textContent = '呪われた！';
-      curseMode2p = false;
-    }
-  });
+      // 動かない表示の設定
+      document.querySelector('#clmid-2p-img').src = LockedView2p[0];
+      document.querySelector('#clmid-2p-3').textContent = LockedView2p[1];
+      document.querySelector('#clmid-2p-5').textContent = LockedView2p[2];
+      document.querySelector('#clmid-2p-7').textContent = LockedView2p[3];
 
-  // 2pのボタンをクリック=>コマンド配列をランダムで表内に表示
-  const attack2player = document.querySelector('#attack-2p')
-  attack2player.addEventListener('click', () => {
+    });
 
-    const interval = setInterval(() => {
-      let n = Math.floor(Math.random() * 6)
-      document.querySelector('#commandTop-2p').textContent = CommandTop2p[n]
-      document.querySelector('#commandButtom-2p').textContent = CommandButtom2p[n];
-      // 装備モードがtrueの際は装備コマンドを表示
-      if (equipMode2p === true) {
-        document.querySelector('#clmid-2p-9').textContent = EquipCommand2p[n];
+    // 2pのケシゴムを選択する際、実配列を仮配列に代入
+    document.querySelector('#assistSelect-2p').addEventListener('change', () => {
+      const assistSelect = document.querySelector('#assistSelect-2p').value;
+      switch (assistSelect) {
+        case 'ルチル':
+          EraserCommand2p = rutileEraserCommand;
+          break;
+        case 'クロエとラスティカ':
+          EraserCommand2p = chloeRusticaEraserCommand;
+          break;
       }
-      // 呪いモードがtrueの際は呪いコマンドを表示
-      if (curseMode2p === true) {
-        document.querySelector('#clmid-2p-1').textContent = curseCommand[n];
+      document.querySelector('#assist-2p-Command').textContent = EraserCommand2p[0];
+      document.querySelector('#assist-2p-Icon').src = EraserCommand2p[6];
+    });
+
+    // 2pの装備を選択する際、実配列を仮配列に代入
+    document.querySelector('#equipSelect-2p').addEventListener('change', () => {
+      const equipSelect = document.querySelector('#equipSelect-2p').value;
+      switch (equipSelect) {
+        case 'おおがま':
+          EquipCommand2p = sickleEquipCommand;
+          document.querySelector('#equip-2p').disabled = false;
+          break;
+        case 'きしだんの剣':
+          EquipCommand2p = swordEquipCommand;
+          document.querySelector('#equip-2p').disabled = false;
+          break;
+        case 'メイス':
+          EquipCommand2p = maceEquipCommand;
+          document.querySelector('#equip-2p').disabled = false;
+          break;
       }
-    }, 25);
-    setTimeout(() => {
-      clearInterval(interval);
-    }, 1000);
+    });
 
-  });
+    // 2pの装備するボタンをクリック=>装備コマンドを表示、モードをtrueに
+    document.querySelector('#equip-2p').addEventListener('click', () => {
 
-  // 2pのボタンをクリック=>交流ケシゴムをランダムで表内に表示
-  const assist2player = document.querySelector('#assist-2p')
-  assist2player.addEventListener('click', () => {
+      if (equipMode2p === false) {
+        // 文字と色を変える
+        document.querySelector('#clmid-2p-9').textContent = EquipCommand2p[0];
+        document.querySelectorAll('.mahoen-2p-9').forEach((element) => {
+          element.style.background = EquipCommand2p[6];
+        });
+        // ボタンの表記を変更
+        document.querySelector('#equip-2p').textContent = '装備を外す！';
+        equipMode2p = true;
+      } else {
+        document.querySelector('#clmid-2p-9').textContent = '';
+        document.querySelectorAll('.mahoen-2p-9').forEach((element) => {
+          element.style.background = LockedView2p[5];
+        });
+        document.querySelector('#equip-2p').textContent = '装備する！';
+        equipMode2p = false;
+      }
+    });
 
-    const interval = setInterval(() => {
-      let n = Math.floor(Math.random() * 6)
-      document.querySelector('#assist-2p-Command').textContent = EraserCommand2p[n]
-    }, 25);
-    setTimeout(() => {
-      clearInterval(interval);
-    }, 1000);
+    // 2pの呪いボタンをクリック=>呪いコマンドを表示、モードをtrueに
+    document.querySelector('#curse-2p').addEventListener('click', () => {
+      if (curseMode2p === false) {
+        document.querySelector('#clmid-2p-1').textContent = curseCommand[0];
+        document.querySelectorAll('.mahoen-2p-1').forEach((element) => {
+          element.style.background = curseCommand[6];
+        });
+        document.querySelector('#curse-2p').textContent = '呪いを浄化';
+        curseMode2p = true;
+      } else {
+        document.querySelector('#clmid-2p-1').textContent = '';
+        document.querySelectorAll('.mahoen-2p-1').forEach((element) => {
+          element.style.background = LockedView2p[5];
+        });
+        document.querySelector('#curse-2p').textContent = '呪われた！';
+        curseMode2p = false;
+      }
+    });
 
-    // assist2player.disabled = true;
-  });
-
-  // マイナスボタンをクリックする際、値から差し引く
-  const updateHP = (buttonId, decrement) => {
-    document.querySelector(buttonId).addEventListener('click', () => {
-      // HPの値を10進数の数値として解釈する
-      let count = parseInt(document.querySelector('#HP-2p').value, 10);
-      const targetValue =
-        (decrement > 0) ? count - decrement : count + (-decrement);
-      const counterElement = document.querySelector('#HP-2p');
+    // 2pのボタンをクリック=>コマンド配列をランダムで表内に表示
+    const attack2player = document.querySelector('#attack-2p')
+    attack2player.addEventListener('click', () => {
 
       const interval = setInterval(() => {
-        if (decrement > 0) {
-          count--;
-        } else {
-          count++;
-          // 値が100以上にならないように制御 
-          if (count > 100) {
-            count = 100; clearInterval(interval);
-          }
+        let n = Math.floor(Math.random() * 6)
+        document.querySelector('#commandTop-2p').textContent = CommandTop2p[n]
+        document.querySelector('#commandButtom-2p').textContent = CommandButtom2p[n];
+        // 装備モードがtrueの際は装備コマンドを表示
+        if (equipMode2p === true) {
+          document.querySelector('#clmid-2p-9').textContent = EquipCommand2p[n];
         }
-        counterElement.value = count;
+        // 呪いモードがtrueの際は呪いコマンドを表示
+        if (curseMode2p === true) {
+          document.querySelector('#clmid-2p-1').textContent = curseCommand[n];
+        }
+      }, 25);
+      setTimeout(() => {
+        clearInterval(interval);
+      }, 1000);
 
-        if ((decrement > 0 && count <= targetValue) || (decrement < 0 && count >= targetValue) || count <= 0) {
-          clearInterval(interval);
-        }
-        // 値が0以下になった時喋る
-        if (count <= 0) {
-          document.querySelector('#losevoice-2p').textContent = LockedView2p[6];
-        }
-      }, 5);
     });
-  };
-  // 2pのボタンごとに関数を呼び出す 
-  updateHP('#minus50-2p', 50);
-  updateHP('#minus40-2p', 40);
-  updateHP('#minus30-2p', 30);
-  updateHP('#minus20-2p', 20);
-  updateHP('#minus10-2p', 10);
-  updateHP('#plus10-2p', - 10);
-  updateHP('#plus20-2p', - 20);
-  updateHP('#plus30-2p', - 30);
 
-}
+    // 2pのボタンをクリック=>交流ケシゴムをランダムで表内に表示
+    const assist2player = document.querySelector('#assist-2p')
+    assist2player.addEventListener('click', () => {
+
+      const interval = setInterval(() => {
+        let n = Math.floor(Math.random() * 6)
+        document.querySelector('#assist-2p-Command').textContent = EraserCommand2p[n]
+      }, 25);
+      setTimeout(() => {
+        clearInterval(interval);
+      }, 1000);
+
+      // assist2player.disabled = true;
+    });
+
+    // マイナスボタンをクリックする際、値から差し引く
+    const updateHP = (buttonId, decrement) => {
+      document.querySelector(buttonId).addEventListener('click', () => {
+        // HPの値を10進数の数値として解釈する
+        let count = parseInt(document.querySelector('#HP-2p').value, 10);
+        const targetValue =
+          (decrement > 0) ? count - decrement : count + (-decrement);
+        const counterElement = document.querySelector('#HP-2p');
+
+        const interval = setInterval(() => {
+          if (decrement > 0) {
+            count--;
+          } else {
+            count++;
+            // 値が100以上にならないように制御 
+            if (count > 100) {
+              count = 100; clearInterval(interval);
+            }
+          }
+          counterElement.value = count;
+
+          if ((decrement > 0 && count <= targetValue) || (decrement < 0 && count >= targetValue) || count <= 0) {
+            clearInterval(interval);
+          }
+          // 値が0以下になった時喋る
+          if (count <= 0) {
+            document.querySelector('#losevoice-2p').textContent = LockedView2p[6];
+          }
+        }, 5);
+      });
+    };
+    // 2pのボタンごとに関数を呼び出す 
+    updateHP('#minus50-2p', 50);
+    updateHP('#minus40-2p', 40);
+    updateHP('#minus30-2p', 30);
+    updateHP('#minus20-2p', 20);
+    updateHP('#minus10-2p', 10);
+    updateHP('#plus10-2p', - 10);
+    updateHP('#plus20-2p', - 20);
+    updateHP('#plus30-2p', - 30);
+
+  }
 
   // リセットボタン
   document.querySelector('#reset-1p').addEventListener('click', () => {
     const userConfirmed = confirm('リセットしますか？');
-     if (userConfirmed) {
+    if (userConfirmed) {
       // HPのリセット
-      document.querySelector('#HP-1p').value= 100;
+      document.querySelector('#HP-1p').value = 100;
 
       // 装備のリセット
       document.querySelector('#clmid-1p-9').textContent = '';
@@ -1187,6 +1187,9 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
       });
       document.querySelector('#equip-1p').textContent = '装備する！';
       equipMode1p = false;
+
+      document.querySelector('#equip-1p').disabled = true;
+      document.querySelector('#equipSelect-1p').value = '-そうびを選ぶ！-';
 
       // 呪いのリセット
       document.querySelector('#clmid-1p-1').textContent = '';
@@ -1199,36 +1202,8 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
       // 負けボイスのリセット
       document.querySelector('#losevoice-1p').textContent = ' '
 
-            // HPのリセット
-            document.querySelector('#HP-2p').value= 100;
-
-            // 装備のリセット
-            document.querySelector('#clmid-2p-9').textContent = '';
-            document.querySelectorAll('.mahoen-2p-9').forEach((element) => {
-              element.style.background = LockedView2p[5];
-            });
-            document.querySelector('#equip-2p').textContent = '装備する！';
-            equipMode2p = false;
-      
-            // 呪いのリセット
-            document.querySelector('#clmid-2p-1').textContent = '';
-            document.querySelectorAll('.mahoen-2p-1').forEach((element) => {
-              element.style.background = LockedView2p[5];
-            });
-            document.querySelector('#curse-2p').textContent = '呪われた！';
-            curseMode2p = false;
-      
-            // 負けボイスのリセット
-            document.querySelector('#losevoice-2p').textContent = ' '
-    } 
-  });
-
-  // リセットボタン
-  document.querySelector('#reset-2p').addEventListener('click', () => {
-    const userConfirmed = confirm('リセットしますか？');
-     if (userConfirmed) {
       // HPのリセット
-      document.querySelector('#HP-2p').value= 100;
+      document.querySelector('#HP-2p').value = 100;
 
       // 装備のリセット
       document.querySelector('#clmid-2p-9').textContent = '';
@@ -1237,6 +1212,41 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
       });
       document.querySelector('#equip-2p').textContent = '装備する！';
       equipMode2p = false;
+
+      document.querySelector('#equip-2p').disabled = true;
+      document.querySelector('#equipSelect-2p').value = '-そうびを選ぶ！-';
+
+
+      // 呪いのリセット
+      document.querySelector('#clmid-2p-1').textContent = '';
+      document.querySelectorAll('.mahoen-2p-1').forEach((element) => {
+        element.style.background = LockedView2p[5];
+      });
+      document.querySelector('#curse-2p').textContent = '呪われた！';
+      curseMode2p = false;
+
+      // 負けボイスのリセット
+      document.querySelector('#losevoice-2p').textContent = ' '
+    }
+  });
+
+  // リセットボタン
+  document.querySelector('#reset-2p').addEventListener('click', () => {
+    const userConfirmed = confirm('リセットしますか？');
+    if (userConfirmed) {
+      // HPのリセット
+      document.querySelector('#HP-2p').value = 100;
+
+      // 装備のリセット
+      document.querySelector('#clmid-2p-9').textContent = '';
+      document.querySelectorAll('.mahoen-2p-9').forEach((element) => {
+        element.style.background = LockedView2p[5];
+      });
+      document.querySelector('#equip-2p').textContent = '装備する！';
+      equipMode2p = false;
+      document.querySelector('#equip-2p').disabled = true;
+      document.querySelector('#equipSelect-2p').value = '-そうびを選ぶ！-';
+
 
       // 呪いのリセット
       document.querySelector('#clmid-2p-1').textContent = '';
@@ -1249,28 +1259,31 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
       // 負けボイスのリセット
       document.querySelector('#losevoice-2p').textContent = ' '
 
-           // HPのリセット
-           document.querySelector('#HP-1p').value= 100;
+      // HPのリセット
+      document.querySelector('#HP-1p').value = 100;
 
-           // 装備のリセット
-           document.querySelector('#clmid-1p-9').textContent = '';
-           document.querySelectorAll('.mahoen-1p-9').forEach((element) => {
-             element.style.background = LockedView1p[5];
-           });
-           document.querySelector('#equip-1p').textContent = '装備する！';
-           equipMode1p = false;
-     
-           // 呪いのリセット
-           document.querySelector('#clmid-1p-1').textContent = '';
-           document.querySelectorAll('.mahoen-1p-1').forEach((element) => {
-             element.style.background = LockedView1p[5];
-           });
-           document.querySelector('#curse-1p').textContent = '呪われた！';
-           curseMode1p = false;
-     
-           // 負けボイスのリセット
-           document.querySelector('#losevoice-1p').textContent = ' '
-    } 
+      // 装備のリセット
+      document.querySelector('#clmid-1p-9').textContent = '';
+      document.querySelectorAll('.mahoen-1p-9').forEach((element) => {
+        element.style.background = LockedView1p[5];
+      });
+      document.querySelector('#equip-1p').textContent = '装備する！';
+      equipMode1p = false;
+      document.querySelector('#equip-1p').disabled = true;
+      document.querySelector('#equipSelect-1p').value = '-そうびを選ぶ！-';
+
+
+      // 呪いのリセット
+      document.querySelector('#clmid-1p-1').textContent = '';
+      document.querySelectorAll('.mahoen-1p-1').forEach((element) => {
+        element.style.background = LockedView1p[5];
+      });
+      document.querySelector('#curse-1p').textContent = '呪われた！';
+      curseMode1p = false;
+
+      // 負けボイスのリセット
+      document.querySelector('#losevoice-1p').textContent = ' '
+    }
   });
 
 

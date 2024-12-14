@@ -912,6 +912,9 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
       document.querySelector('#equip-1p').textContent = '装備する！';
       equipMode1p = false;
 
+      document.querySelector('#equip-1p').disabled = true;
+      document.querySelector('#equipSelect-1p').value = '-そうびを選ぶ！-';
+
       // 呪いのリセット
       document.querySelector('#clmid-1p-1').textContent = '';
       document.querySelectorAll('.mahoen-1p-1').forEach((element) => {
