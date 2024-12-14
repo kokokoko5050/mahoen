@@ -1177,7 +1177,49 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
   document.querySelector('#reset-1p').addEventListener('click', () => {
     const userConfirmed = confirm('リセットしますか？');
      if (userConfirmed) {
-      location.reload();
+      // HPのリセット
+      document.querySelector('#HP-1p').value= 100;
+
+      // 装備のリセット
+      document.querySelector('#clmid-1p-9').textContent = '';
+      document.querySelectorAll('.mahoen-1p-9').forEach((element) => {
+        element.style.background = LockedView1p[5];
+      });
+      document.querySelector('#equip-1p').textContent = '装備する！';
+      equipMode1p = false;
+
+      // 呪いのリセット
+      document.querySelector('#clmid-1p-1').textContent = '';
+      document.querySelectorAll('.mahoen-1p-1').forEach((element) => {
+        element.style.background = LockedView1p[5];
+      });
+      document.querySelector('#curse-1p').textContent = '呪われた！';
+      curseMode1p = false;
+
+      // 負けボイスのリセット
+      document.querySelector('#losevoice-1p').textContent = ' '
+
+            // HPのリセット
+            document.querySelector('#HP-2p').value= 100;
+
+            // 装備のリセット
+            document.querySelector('#clmid-2p-9').textContent = '';
+            document.querySelectorAll('.mahoen-2p-9').forEach((element) => {
+              element.style.background = LockedView2p[5];
+            });
+            document.querySelector('#equip-2p').textContent = '装備する！';
+            equipMode2p = false;
+      
+            // 呪いのリセット
+            document.querySelector('#clmid-2p-1').textContent = '';
+            document.querySelectorAll('.mahoen-2p-1').forEach((element) => {
+              element.style.background = LockedView2p[5];
+            });
+            document.querySelector('#curse-2p').textContent = '呪われた！';
+            curseMode2p = false;
+      
+            // 負けボイスのリセット
+            document.querySelector('#losevoice-2p').textContent = ' '
     } 
   });
 
@@ -1185,7 +1227,49 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
   document.querySelector('#reset-2p').addEventListener('click', () => {
     const userConfirmed = confirm('リセットしますか？');
      if (userConfirmed) {
-      location.reload();
+      // HPのリセット
+      document.querySelector('#HP-2p').value= 100;
+
+      // 装備のリセット
+      document.querySelector('#clmid-2p-9').textContent = '';
+      document.querySelectorAll('.mahoen-2p-9').forEach((element) => {
+        element.style.background = LockedView2p[5];
+      });
+      document.querySelector('#equip-2p').textContent = '装備する！';
+      equipMode2p = false;
+
+      // 呪いのリセット
+      document.querySelector('#clmid-2p-1').textContent = '';
+      document.querySelectorAll('.mahoen-2p-1').forEach((element) => {
+        element.style.background = LockedView2p[5];
+      });
+      document.querySelector('#curse-2p').textContent = '呪われた！';
+      curseMode2p = false;
+
+      // 負けボイスのリセット
+      document.querySelector('#losevoice-2p').textContent = ' '
+
+           // HPのリセット
+           document.querySelector('#HP-1p').value= 100;
+
+           // 装備のリセット
+           document.querySelector('#clmid-1p-9').textContent = '';
+           document.querySelectorAll('.mahoen-1p-9').forEach((element) => {
+             element.style.background = LockedView1p[5];
+           });
+           document.querySelector('#equip-1p').textContent = '装備する！';
+           equipMode1p = false;
+     
+           // 呪いのリセット
+           document.querySelector('#clmid-1p-1').textContent = '';
+           document.querySelectorAll('.mahoen-1p-1').forEach((element) => {
+             element.style.background = LockedView1p[5];
+           });
+           document.querySelector('#curse-1p').textContent = '呪われた！';
+           curseMode1p = false;
+     
+           // 負けボイスのリセット
+           document.querySelector('#losevoice-1p').textContent = ' '
     } 
   });
 

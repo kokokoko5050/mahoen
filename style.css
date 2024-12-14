@@ -123,8 +123,8 @@ h1{
 }
 
 .mahoyakuExp h2 {
-  font-size: 30px;
-  width: 350px;
+  font-size: 24px;
+  width: 300px;
   margin: 0 auto;
   color: pink;
   text-shadow: 2px 2px 2px red;
@@ -174,8 +174,8 @@ span{
 }
 
 .gifContainer h2 {
-  font-size: 30px;
-  width: 350px;
+  font-size: 24px;
+  width: 300px;
   margin: 0 auto;
   color: rgb(255, 136, 0);
   text-shadow: 2px 2px 2px rgb(60, 0, 255);
@@ -220,7 +220,7 @@ footer p{
 }
 
 .mahoenHowto {
-  position: fixed;
+  position: absolute;
   top: 24px;
   left: 0;
   right: 0;

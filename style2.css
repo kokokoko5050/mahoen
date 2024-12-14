@@ -35,6 +35,32 @@ td {
   transform: translate(0, -1500px);
 }
 
+/* 推奨文言 */
+#recommendPage{
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: calc(100% - 32px);
+  height: 300px;
+  text-align: center;
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #333;
+  z-index: 2;
+  padding: 16px;
+}
+
+#recommendPage p{
+  margin-top: 32px;
+}
+
+#recommendHidden {
+  font-weight: bold;
+  float: right;
+}
+
 
 /* プレイヤー選択ボタン */
 #player1Select {

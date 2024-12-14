@@ -1,6 +1,10 @@
 'use strict';
 
 {
+// 推奨画面の出し入れ
+document.querySelector('#recommendHidden').addEventListener('click', () => {
+  document.querySelector('#recommendPage').classList.toggle('hidden')
+});
 
 // ナビの出し入れ
 document.querySelector('#explainIcon').addEventListener('click', () => {
@@ -896,7 +900,27 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
   document.querySelector('#reset').addEventListener('click', () => {
     const userConfirmed = confirm('リセットしますか？');
      if (userConfirmed) {
-      location.reload();
+      // HPのリセット
+      document.querySelector('#HP-1p').value= 100;
+
+      // 装備のリセット
+      document.querySelector('#clmid-1p-9').textContent = '';
+      document.querySelectorAll('.mahoen-1p-9').forEach((element) => {
+        element.style.background = LockedView1p[5];
+      });
+      document.querySelector('#equip-1p').textContent = '装備する！';
+      equipMode1p = false;
+
+      // 呪いのリセット
+      document.querySelector('#clmid-1p-1').textContent = '';
+      document.querySelectorAll('.mahoen-1p-1').forEach((element) => {
+        element.style.background = LockedView1p[5];
+      });
+      document.querySelector('#curse-1p').textContent = '呪われた！';
+      curseMode1p = false;
+
+      // 負けボイスのリセット
+      document.querySelector('#losevoice-1p').textContent = ' '
     } 
   });
 
