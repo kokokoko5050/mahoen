@@ -141,7 +141,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
     '【LOSE】「呪ってやる…。」',
   ],
     faustCommandTop = [
-      "《ｻﾃｨﾙｸﾅｰﾄﾑﾙｸﾘｰﾄﾞ》 味方のHP30回復",
+      "《ｻﾃｨﾙｸﾅｰﾄﾑﾙｸﾘｰﾄﾞ》 味方のHP20回復",
       "そうび",
       "あいてに のろいキャップをつける",
       "《ｻﾃｨﾙｸﾅｰﾄﾑﾙｸﾘｰﾄﾞ》 全員に20のダメージ",
@@ -221,7 +221,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
       "《ｱﾄﾞﾉﾃﾞｨｽｵﾑﾆｽ》 全員に20ダメージ",
       "ブラッドからえんご 次の１回の攻撃力が２ばい",
       "《ｱﾄﾞﾉﾃﾞｨｽｵﾑﾆｽ》 全員に20ダメージ",
-      "アヒージョでばんしゃく！ HP30回復",
+      "アヒージョでばんしゃく！ HP20回復",
       "《ｱﾄﾞﾉﾃﾞｨｽｵﾑﾆｽ》 全員に20ダメージ",
       "ブラッドからえんご 次の１回の攻撃力が２ばい",
     ],
@@ -293,7 +293,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
     '【LOSE】「……。」',
   ],
     figaroAdCommandTop = [
-      "《ﾎﾟｯｼﾃﾞｵ》 味方のHP40かいふく",
+      "《ﾎﾟｯｼﾃﾞｵ》 味方のHP30かいふく",
       "ミチルがみている 全員に10のダメージ",
       "むしけらが ●に30のダメージ",
       "けだものが ★に30のダメージ",
@@ -318,7 +318,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
     '【LOSE】「わーーーっ！」',
   ],
     riquetMitileCommandTop = [
-      "《ｵﾙﾄﾆｸ･ｾｱﾙｼｽﾋﾟﾙﾁｪ》 HP30かいふく",
+      "《ｵﾙﾄﾆｸ･ｾｱﾙｼｽﾋﾟﾙﾁｪ》 HP20かいふく",
       "《ｻﾝﾚﾃｨｱ･ｴﾃﾞｨﾌ》 全員に20ダメージ",
       "《ｵﾙﾄﾆｸ･ｾｱﾋﾟ… かんだ！ もう１回振る！",
       "回復薬をつかった HP20かいふく",
