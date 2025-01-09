@@ -112,7 +112,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
     '',
     '謎のちょい悪オヤジ製作のまほエン。超強力なHP全回復がとくちょう。そういうところだぞ！',
     '#aecd1b',
-    '【LOSE】「まいったな…。」',
+    '【LOSE】「まいった！フィガロ先生の負けだネ☆」',
   ],
     figaroCommandTop = [
       "《ﾎﾟｯｼﾃﾞｵ》 味方のHP全かいふく ",
@@ -138,7 +138,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
     '',
     '回復、そうび、呪いをこなす万能まほエン。そういえば呪い屋だったね。',
     '#5e8ce1',
-    '【LOSE】「呪ってやる…。」',
+    '【LOSE】「嵐の谷に帰る…」',
   ],
     faustCommandTop = [
       "《ｻﾃｨﾙｸﾅｰﾄﾑﾙｸﾘｰﾄﾞ》 味方のHP20回復",
@@ -164,7 +164,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
     '',
     'おおがまをそうびすれば、安定して相手を狩れるぞ！２ほん持ってはいけないという、きまりはないのだ！',
     '#5e8ce1',
-    '【LOSE】「おい。かかってこいよ。」「こらシノ」',
+    '【LOSE】「おい、次は実戦だ。表に出ろ。」「こらシノ」',
   ],
     shinoHeathCommandTop = [
       "《ﾏｯﾂｱｰｽﾃﾞｨｰﾊﾟｽ》 全員に20ダメージ",
@@ -215,7 +215,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
     '',
     '仲良しのブラッド…リーくんに強化されれば、大ダメージを狙えるぞ！回復もこなせるしぶといまほエン',
     '#5e8ce1',
-    '【LOSE】「ちゃちな料理人なんで…」',
+    '【LOSE】「まぁ…東のしがない料理屋なんで…」',
   ],
     neroCommandTop = [
       "《ｱﾄﾞﾉﾃﾞｨｽｵﾑﾆｽ》 全員に20ダメージ",
@@ -240,7 +240,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
     '',
     '呪文のあとのこうげきは強力だ！厄災のきずを利用して回避もできる！さすがボス！かしこい！',
     '#b488f8',
-    '【LOSE】「おれは盗賊団のボスだぞ！」',
+    '【LOSE】「やるじゃねぇか！もう一回だ！」',
   ],
     bradleyCommandTop = [
       "うちぬいた！ ★に30のダメージ",
@@ -290,7 +290,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
     '',
     '謎の有識者により、バランス調整されたまほエン。いざというとき呪文が使えないこともある！そんな時もある！',
     '#aecd1b',
-    '【LOSE】「……。」',
+    '【LOSE】「（手が冷たい…）」',
   ],
     figaroAdCommandTop = [
       "《ﾎﾟｯｼﾃﾞｵ》 味方のHP30かいふく",
@@ -315,7 +315,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
     '',
     '大きな攻撃はもたないが、高確率で回復をつかうことができるぞ！二人で協力してがんばれ！',
     '#aecd1b',
-    '【LOSE】「わーーーっ！」',
+    '【LOSE】「「わーーーっ！」」',
   ],
     riquetMitileCommandTop = [
       "《ｵﾙﾄﾆｸ･ｾｱﾙｼｽﾋﾟﾙﾁｪ》 HP20かいふく",
@@ -438,7 +438,7 @@ document.querySelector('#explainIcon').addEventListener('click', () => {
     '★',
     'こどものすがた',
     'おとなのすがた',
-    '★マークにはようしゃしないまほエンだ！低確率でこどもの姿に戻ってしまう！たすけて～！',
+    '★マークにはようしゃしないまほエンだ！悪い子にはお仕置きじゃ！',
     '#b488f8',
     '【LOSE】「「きゃーっ！」」',
   ],

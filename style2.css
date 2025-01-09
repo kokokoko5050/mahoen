@@ -263,11 +263,11 @@ nav {
 .equipContainer {
   background: #fff;
   position: absolute;
-  top: 16px;
-  left: 0;
+  top: 8px;
+  left: 8px;
   right: 0;
   margin: 0 auto;
-  width: 660px;
+  width: 620px;
   margin: 0 auto;
   border-radius: 8px;
   padding: 8px;
@@ -284,7 +284,7 @@ nav {
 }
 
 .equipContainer h2 {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .equipContainer img {
@@ -304,9 +304,9 @@ nav {
 
 .equipExp p {
   margin-top: 8px;
-  font-size: 12px;
+  font-size: 11px;
   /* background: yellow; */
-  height: 60px;
+  height: 55px;
   width: 180px;
   margin: 0 auto;
 }
@@ -327,16 +327,16 @@ nav {
 
 .equipExp th {
   border: 1px solid #111;
-  padding: 2px 0;
-  font-size: 12px;
+  padding: 1px 0;
+  font-size: 11px;
   color: white;
   background: rgb(255, 97, 123);
 }
 
 .equipExp td {
   padding: 1px 0;
-  font-size: 12px;
-  height: 25px;
+  font-size: 11px;
+  height: 22px;
 }
 
 /* 呪い紹介のページ */
@@ -348,7 +348,7 @@ nav {
   right: 0;
   margin: 0 auto;
   z-index: 3;
-  width: 400px;
+  width: 300px;
   border-radius: 8px;
   padding: 8px;
 
@@ -371,7 +371,7 @@ nav {
 
 .curseContainer p {
   margin-top: 8px;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .curseContainer tr:nth-child(odd) {
@@ -380,15 +380,15 @@ nav {
 
 .curseContainer th {
   border: 1px solid #111;
-  padding: 2px 0;
-  font-size: 12px;
+  padding: 1px 0;
+  font-size: 11px;
   color: white;
   background: rgb(255, 97, 123);
 }
 
 .curseContainer td {
-  padding: 2px 0;
-  font-size: 12px;
+  padding: 1px 0;
+  font-size: 11px;
   height: 22px;
 }
 
@@ -401,11 +401,11 @@ nav {
 .eraserContainer {
   background: #fff;
   position: absolute;
-  top: 16px;
-  left: 0;
+  top: 12px;
+  left: 16px;
   right: 0;
   margin: 0 auto;
-  width: 650px;
+  width: 620px;
   border-radius: 8px;
   padding: 8px;
   z-index: 3;
@@ -431,7 +431,7 @@ nav {
   display: flex;
   gap: 16px;
   justify-content: center;
-  margin-top: 16px;
+  margin-top: 8px;
 }
 
 #rutileExp,
@@ -444,7 +444,7 @@ nav {
   margin-top: 4px;
   height: 72px;
   width: 146px;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .eraserExp tr:nth-child(odd) {
@@ -479,9 +479,9 @@ nav {
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 660px;
+  width: 640px;
   border-radius: 8px;
-  padding: 16px;
+  padding: 8px;
   z-index: 3;
   transition: transform 0.4s;
   text-align: center;
@@ -518,7 +518,7 @@ nav {
 }
 
 .wizardExpContainer p {
-  font-size: 12px;
+  font-size: 11px;
   width: 200px;
 }
 
@@ -718,7 +718,7 @@ nav {
 
 /* まほエン１ｐスタイル */
 #Player1Mahoen {
-  padding: 24px 0 8px 16px;
+  padding: 8px 0 8px 16px;
   /* background: pink; */
 }
 
