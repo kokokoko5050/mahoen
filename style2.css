@@ -78,13 +78,12 @@ td {
   gap: 16px;
   justify-content: space-between;
   padding: 8px 16px 0;
-  /* background: skyblue; */
 }
 
 #player1Select select {
   width: 200px;
-  padding: 8px;
-  font-size: 16px;
+  padding: 4px;
+  font-size: 14px;
   color: #444;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
@@ -306,7 +305,7 @@ nav {
   margin-top: 8px;
   font-size: 11px;
   /* background: yellow; */
-  /* height: 55px; */
+  height: 55px;
   width: 180px;
   margin: 0 auto;
 }
@@ -449,7 +448,7 @@ nav {
 
 .eraserExp p {
   margin-top: 4px;
-  /* height: 50px; */
+  height: 55px;
   width: 180px;
   font-size: 11px;
 }
@@ -559,8 +558,6 @@ nav {
   margin: 8px auto 0;
 }
 
-
-
 /* 全体コンテナ */
 .container-1p {
   border: 1px dotted #333;
@@ -626,7 +623,7 @@ nav {
 #assist-1p {
   all: unset;
   display: block;
-  padding: 4px 0;
+  padding: 8px 0;
   border-radius: 8px;
   cursor: pointer;
   width: 120px;
@@ -722,10 +719,9 @@ nav {
   background: #a5007e;
 }
 
-
 /* まほエン１ｐスタイル */
 #Player1Mahoen {
-  padding: 8px 0 8px 16px;
+  padding: 0 0 8px 16px;
   /* background: pink; */
 }
 
