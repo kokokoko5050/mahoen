@@ -269,7 +269,7 @@ nav {
   width: 620px;
   margin: 0 auto;
   border-radius: 8px;
-  padding: 8px;
+  padding: 4px 8px;
   z-index: 3;
   transition: transform 0.4s;
   text-align: center;
@@ -589,7 +589,7 @@ nav {
 #HP-1p {
   font-size: 24px;
   width: 80px;
-  height: 36px;
+  height: 32px;
   text-align: center;
 }
 
@@ -724,7 +724,7 @@ nav {
 
 /* まほエン１ｐスタイル */
 #Player1Mahoen {
-  padding: 0 0 4px 8px;
+  padding: 4px 0 4px 8px;
   /* background: pink; */
 }
 
