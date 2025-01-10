@@ -214,7 +214,7 @@ nav {
 /* まほエンの遊びかた */
 .mahoenHowto {
   position: absolute;
-  top: 40px;
+  top: 16px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -263,7 +263,7 @@ nav {
 .equipContainer {
   background: #fff;
   position: absolute;
-  top: 8px;
+  top: 16px;
   left: 8px;
   right: 0;
   margin: 0 auto;
@@ -358,6 +358,13 @@ nav {
   box-shadow: 0 0 8px black;
 }
 
+#curseImg {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
 /* 閉じるボタン */
 #curseHidden {
   font-weight: bold;
@@ -401,7 +408,7 @@ nav {
 .eraserContainer {
   background: #fff;
   position: absolute;
-  top: 12px;
+  top: 16px;
   left: 16px;
   right: 0;
   margin: 0 auto;
@@ -442,8 +449,8 @@ nav {
 
 .eraserExp p {
   margin-top: 4px;
-  height: 72px;
-  width: 146px;
+  height: 50px;
+  width: 180px;
   font-size: 11px;
 }
 
@@ -512,14 +519,14 @@ nav {
   gap: 8px;
 }
 
-.wizardExpContainer h4 {
-  margin-top: 4px;
+#wizardExp {
   font-size: 13px;
 }
 
 .wizardExpContainer p {
+  margin-top: 8px;
   font-size: 11px;
-  width: 200px;
+  width: 280px;
 }
 
 .wizardExpBottom {
