@@ -562,8 +562,8 @@ nav {
 .container-1p {
   border: 1px dotted #333;
   background: #eee;
-  margin-left: 4px;
-  max-width: 660px;
+  margin-left: 8px;
+  max-width: 654px;
   width: 100%;
   padding: 8px;
   border-radius: 16px;
@@ -626,14 +626,14 @@ nav {
   padding: 4px 0;
   border-radius: 8px;
   cursor: pointer;
-  width: 120px;
+  width: 80px;
   text-align: center;
   font-weight: bold;
   font-size: 12px;
   background: #bdffab;
   border: 1px solid #333;
   box-shadow: 0 4px 0 0;
-  margin: 8px auto 0px;
+  margin: 32px auto 0px;
 
 }
 
@@ -644,7 +644,7 @@ nav {
 
 #attack-1p {
   all: unset;
-  margin: 32px 32px 0 32px;
+  margin: 32px 0 0 16px;
   padding: 8px 0;
   border-radius: 8px;
   cursor: pointer;
