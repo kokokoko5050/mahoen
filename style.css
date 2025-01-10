@@ -32,8 +32,12 @@ header {
 h1{
   font-size: 24px;
   display: inline;
-  color: #fff;
-  /* background: pink; */
+  color: #333;
+  text-shadow:
+  1px 1px 0 #fff,
+  -1px -1px 0 #fff,
+  -1px 1px 0 #fff,
+  1px -1px 0 #fff;
 }
 
 @keyframes rainbow { 
