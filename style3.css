@@ -203,7 +203,7 @@ nav {
   right: 0;
   margin: 0 auto;
   text-align: center;
-  width: 600px;
+  width: 660px;
   background: #fff;
   margin: 0 auto;
   border-radius: 8px;
@@ -212,6 +212,10 @@ nav {
   padding: 16px;
   z-index: 3;
   transition: transform 0.4s;
+}
+
+#overflow{
+  overflow: scroll;
 }
 
 /* 閉じるボタン */
@@ -233,14 +237,17 @@ nav {
 
 .mahoenHowto p {
   font-size: 12px;
+  height: 150px;
 }
 
-.mahoenHowto p+p {
-  margin-top: 8px;
+.mahoenHowto span {
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .video-container {
   margin-top: 16px;
+  height: 150px;
 }
 
 /* そうび紹介のページ */
