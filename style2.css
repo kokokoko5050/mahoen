@@ -48,7 +48,7 @@ td {
 /* 推奨文言 */
 #recommendPage{
   position: fixed;
-  top: 40px;
+  top: 16px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -229,6 +229,10 @@ nav {
   transition: transform 0.4s;
 }
 
+#overflow{
+  overflow: scroll;
+}
+
 /* 閉じるボタン */
 #HowtoHidden {
   font-weight: bold;
@@ -247,15 +251,13 @@ nav {
 }
 
 .mahoenHowto p {
-  font-size: 12px;
-}
-
-.mahoenHowto p+p {
-  margin-top: 8px;
+  font-size: 11px;
+  height: 180px;
 }
 
 .video-container{
   margin-top: 16px;
+  height: 180px;
 }
 
 /* そうび紹介のページ */
